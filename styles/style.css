@@ -1,0 +1,23 @@
+/* GLOBAL STYLES */
+@import "./global.css";
+
+/* HEADER */
+@import "../css/header.css";
+
+/* INTRODUCAO DO SITE - INICIO */
+@import "../css/introducao.css";
+
+/* CARACTERISTICAS ACIMA DO SOBRE - TAMBEM FAZ PARTE */
+@import "../css/caracteristicas.css";
+
+/* AREA ABOUT ME - DESCRICAO, SKILLS, ETC */
+@import "../css/sobre.css";
+
+/* PROJETOS OU WORKS */
+@import "../css/projetos.css";
+
+/* EXPERIENCIA E ESTUDO */
+@import "../css/experiencia.css";
+
+/* CONTATO - FOOTER */
+@import "../css/contato.css";

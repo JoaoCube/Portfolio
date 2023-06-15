@@ -1,0 +1,229 @@
+@mixin work-bg-definicao {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: var(--white-color);
+  height: 100vh;
+}
+.work-bg {
+  @include work-bg-definicao();
+}
+/* CONTAINER DA AREA DO WORK */
+.work-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* AREA SO DE CONTEUDO */
+@mixin work-conteudo-definicao {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+.work-conteudo {
+  @include work-conteudo-definicao();
+}
+
+@mixin work-titulo {
+  font-size: 3rem;
+  max-width: 1600px;
+  color: var(--black-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  display: flex;
+  font-family: "Roboto", Arial, Helvetica, serif;
+}
+.work-conteudo h1 {
+  @include work-titulo();
+}
+.work-conteudo h1::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 4px;
+  background-color: var(--red-color);
+  align-self: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+/* CONTAINER SO DOS CARDS NO WORK CONTEUDO */
+.work-cardCont {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* CARD */
+@mixin work-card-definicoes {
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  width: 330px;
+  border-radius: 4px;
+  margin-left: 23px;
+  background-color: var(--white2-color);
+}
+.work-card {
+  @include work-card-definicoes();
+}
+/* IMAGEM NO CARD */
+.work-card figure img {
+  width: 100%;
+  height: 170px;
+  border-radius: 4px 4px 0px 0px;
+  object-fit: cover;
+}
+/* TEXTOS CONT */
+.work-cardText {
+  padding: 10px;
+}
+.work-cardText .work-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.work-cardText .work-title img {
+  filter: invert(100);
+  width: 20px;
+  height: 16px;
+}
+
+@mixin card-title-site {
+  color: var(--black-color);
+  border-bottom: 1px solid var(--purple-color);
+  font-family: "Roboto", Arial, Helvetica, serif;
+}
+.work-card h3 {
+  @include card-title-site();
+}
+
+/* DISTANCIA ENTRE SITE E CODIGO */
+.work-title a {
+  margin-right: 20px;
+}
+/* TEXTO CODIGO RISCADO */
+.work-title .riscado {
+  text-decoration: line-through;
+}
+
+/* TEXTO CODIGO */
+@mixin text-codigo-definicoes {
+  text-align: center;
+  color: var(--black-color);
+  padding: 1px;
+  font-family: "Poppins", Arial, Helvetica, serif;
+  border-bottom: 1px solid var(--red-color);
+}
+.work-title a > p {
+  @include text-codigo-definicoes();
+}
+
+@mixin card-projetos-descricao {
+  color: var(--black-color);
+  font-family: "Poppins", Arial, Helvetica, serif;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.work-card .work-descricao {
+  @include card-projetos-descricao();
+}
+
+@mixin work-iconC-definicao {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.work-icons {
+  @include work-iconC-definicao();
+}
+@mixin card-icon-img-definicao {
+  width: 26px;
+  height: 26px;
+  opacity: 0.8;
+  margin-right: 10px;
+}
+.work-icons img {
+  @include card-icon-img-definicao();
+}
+
+/* ----------------------------------- */
+
+@media (max-width: 600px) {
+  .work-bg {
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    overflow: hidden;
+  }
+  /* TITULO NO CONTEUDO - WORK RECENTES */
+  .work-conteudo h1::before {
+    background-color: var(--red-color);
+  }
+  .work-conteudo h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+  }
+
+  /* ----------------------- */
+  .work-title a {
+    margin-right: 0px;
+  }
+  .work-title a > p {
+    font-size: 1rem;
+    border-bottom: 1px solid var(--purple-color);
+  }
+  /* ----------------------- */
+
+  .work-cardCont {
+    overflow-x: scroll;
+    padding: 10px;
+    margin: 0px;
+  }
+  .work-card {
+    width: 280px;
+    height: 285px;
+    margin: 10px;
+    border: none;
+  }
+
+  .work-card:nth-child(n + 1) {
+    display: block;
+  }
+
+  .work-card figure img {
+    height: 140px;
+    border: none;
+  }
+  /* INFORMACOES NO CARD */
+  .work-cardText {
+    border: none;
+  }
+
+  /* NOME DO PROJETO WORD */
+  .work-card .work-cardText h3 {
+    font-size: 1rem;
+    color: var(--black-color);
+    border-bottom: 1px solid var(--red-color);
+  }
+  .work-card .work-cardText .work-descricao {
+    font-size: 11px;
+  }
+
+  .work-card .work-icons img {
+    width: 20px;
+    height: 18px;
+  }
+}

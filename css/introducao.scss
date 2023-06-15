@@ -1,0 +1,226 @@
+@mixin intro-bg-definicao {
+  background-color: var(--white-color);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+.introducao-bg {
+  @include intro-bg-definicao();
+}
+/* CONTAINER DAS CARACTERISTICAS */
+.informacao-cont {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* TEXTOS A ESQUERDA NA INTRODUCAO */
+@mixin infoLeft-definicao {
+  padding-top: 140px;
+  padding-left: 80px;
+  position: relative;
+  justify-content: center;
+}
+.info-left {
+  @include infoLeft-definicao();
+}
+
+.title::after {
+  content: "|";
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.info-left .title::before {
+  content: "";
+  width: 100px;
+  height: 6px;
+  position: absolute;
+  background-color: var(--purple-color);
+}
+@mixin titulo-intro {
+  color: var(--black-color);
+  font-size: 4.6rem;
+  font-family: "Roboto", Arial, Helvetica, serif;
+}
+.info-left .title {
+  @include titulo-intro();
+}
+
+/* SUBTETXO - INTRODUCAO BASICA */
+@mixin intro-descricao {
+  padding-top: 10px;
+  color: var(--cinzaE-color);
+  font-family: "Poppins", Arial, Helvetica, serif;
+}
+.info-left > p {
+  @include intro-descricao();
+}
+
+/* CONTAINER DE ICONES DE CONTATO */
+.icons-cont {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+@mixin tam-icones-intro {
+  color: var(--black-color);
+  margin-right: 40px;
+  padding: 15px;
+  border-radius: 30%;
+  width: 48px;
+  height: 48px;
+  background: var(--white2-color);
+}
+.icons-cont svg {
+  @include tam-icones-intro();
+}
+.icons-cont svg:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
+/* ------------------------------------- */
+.info-right {
+  display: flex;
+  align-items: center;
+}
+.info-right img {
+  width: 100%;
+}
+.form-bg {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.form-container {
+  gap: 0px;
+}
+
+.form-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 20px 260px; /* EMAIL GAP ENVIAR */
+}
+
+.form-conteudo .btn-email {
+  background-color: #fff;
+  padding: 25px;
+  font-size: 20px;
+  border: none;
+  grid-column: 1/2;
+}
+.form-conteudo .btn-email::placeholder {
+  color: var(--cinzaE-color);
+  opacity: 0.6;
+}
+.form-conteudo .btn-enviar {
+  background-color: var(--purple-color);
+  padding: 25px;
+  cursor: pointer;
+  grid-column: 3;
+  font-size: 20px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--white-color);
+  border: none;
+}
+.form-conteudo .btn-enviar:hover {
+  background-color: #562cfc;
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .introducao-bg {
+    padding: 0px 10px;
+    margin-bottom: 50px;
+    margin: 0px 0px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .informacao-cont {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0px;
+  }
+
+  .informacao-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .info-left {
+    grid-column: 1;
+    padding-top: 30px;
+    padding-left: 0px;
+  }
+  .info-left .title::before {
+    background-color: var(--purple-color);
+  }
+  .info-left .title {
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: left;
+    word-break: break-word;
+  }
+  .info-left > p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .info-left .icons-cont {
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+
+  .icons-cont svg {
+    color: var(--black-color);
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 30%;
+    width: 28px;
+    height: 28px;
+  }
+
+  .form-bg {
+    display: none;
+  }
+
+  /* CONT IMAGEM MINHA NO INTRODUCAO */
+  .info-right {
+    grid-column: 1;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  .info-right div {
+    padding: 0px;
+    height: 240px;
+  }
+
+  .info-right div > img {
+    margin: 0px;
+    filter: hue-rotate(70deg);
+  }
+}

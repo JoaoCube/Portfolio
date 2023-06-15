@@ -1,0 +1,158 @@
+@mixin caracter-bg-definicao {
+  max-width: 1600px;
+  padding: 80px 0px;
+  /* border-top: 2px solid var(--red-color);
+  border-bottom: 2px solid var(--white-color); */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-bottom: 1px dashed var(--white2-color);
+}
+.caracteristicas-bg {
+  @include caracter-bg-definicao();
+}
+
+@mixin caracterCont-definicao {
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.caracteristicas-container {
+  @include caracterCont-definicao();
+}
+.caracteristicas-conteudo {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 80px;
+  flex-wrap: wrap;
+}
+
+@mixin left-caracter-definicao {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-caracteristicas {
+  @include left-caracter-definicao();
+}
+
+//DIV DO "CARD" DOS FEITOS +10, +19
+.number-title {
+  position: relative;
+}
+
+@mixin caracter-number-grande {
+  color: var(--white-color);
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.number-title h3 {
+  @include caracter-number-grande();
+}
+
+@mixin span {
+  color: var(--purple-color);
+}
+/* SIMBOLO DE MAIS + */
+.left-caracteristicas span {
+  @include span();
+}
+
+.number-title p::before {
+  content: "";
+  top: 82%;
+  left: -2%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red-color);
+  position: absolute;
+}
+@mixin caracter-subtitulo-definicao {
+  color: var(--white2-color);
+  opacity: 0.8;
+  /* border-left: 2px solid var(--black-color); */
+  padding-left: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Poppins", Arial, Helvetica, serif;
+}
+.number-title p {
+  @include caracter-subtitulo-definicao();
+}
+
+/* RESPONSIVIDADE */
+/* @media (max-width: 800px) {
+  .caracteristicas-bg {
+    margin-left: 20px;
+    padding: 30px 0px;
+  }
+
+  .caracteristicas-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .caracteristicas-conteudo {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+
+  .number-title span {
+    color: var(--red-color);
+  }
+
+  .number-title h3 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .number-title p::before {
+    display: none;
+  }
+
+  .number-title p {
+    padding-left: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+} */
+
+@media (max-width: 600px) {
+  .caracteristicas-bg {
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .caracteristicas-conteudo {
+    display: flex;
+    padding: 0px 40px;
+  }
+
+  .left-caracteristicas {
+    overflow-y: scroll;
+    padding: 0px;
+    margin: 30px 0px;
+  }
+
+  .number-title {
+    justify-content: space-between;
+    padding-right: 0px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  .number-title p::before {
+    display: none;
+  }
+}
