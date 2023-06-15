@@ -148,12 +148,10 @@
   @include work-iconC-definicao();
 }
 @mixin card-icon-img-definicao {
-  width: 26px;
-  height: 26px;
-  opacity: 0.8;
-  margin-right: 10px;
+  margin-top: 10px;
+  margin-right: 14px;
 }
-.work-icons img {
+.work-icons i {
   @include card-icon-img-definicao();
 }
 

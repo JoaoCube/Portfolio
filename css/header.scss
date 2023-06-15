@@ -24,14 +24,9 @@
   flex-wrap: wrap;
   gap: 40px;
 }
-
-.header-menu img {
-  width: 50px;
-  cursor: pointer;
-}
-
+// ICONE SOL E LUA
 .header-menu #icon {
-  width: 46px;
+  width: 50px;
   cursor: pointer;
 }
 @mixin header-definicoes-link {

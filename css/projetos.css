@@ -133,11 +133,9 @@
   justify-content: flex-start;
 }
 
-.work-icons img {
-  width: 26px;
-  height: 26px;
-  opacity: 0.8;
-  margin-right: 10px;
+.work-icons i {
+  margin-top: 10px;
+  margin-right: 14px;
 }
 
 /* ----------------------------------- */
