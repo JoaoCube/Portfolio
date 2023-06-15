@@ -62,9 +62,27 @@ a {
   }
   .footer-conteudo {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr auto;
     margin-left: auto;
     margin-right: auto;
+    margin: 0px 30px;
+  }
+  .footer-conteudo > img {
+    margin: 10px;
+    filter: hue-rotate(90deg);
+  }
+}
+@media (max-width: 600px) {
+  .footer-bg {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 15px;
   }
   .footer-conteudo > img {
     margin: 10px;
