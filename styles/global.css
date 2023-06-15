@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .introducao-bg {
-    background: transparent;
+    background: var(--black2-color);
   }
 
   .info-left .title {
@@ -139,7 +139,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* DARK THEME */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .dark-theme {
     .header-menu a {
       background-color: #252525;
@@ -150,6 +150,10 @@ body::-webkit-scrollbar-thumb {
     }
     .introducao-bg {
       background: transparent;
+    }
+
+    .work-bg {
+      background-color: transparent;
     }
 
     .footer-bg {

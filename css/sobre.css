@@ -126,67 +126,73 @@
   font-weight: normal;
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
+  .sobre-bg {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
   .sobre-container {
     margin-left: auto;
     margin-right: auto;
     padding: 0px 10px;
   }
-
   .sobre-conteudo {
     display: grid;
     grid-template-columns: 1fr;
   }
-
   .sobre-euLeft {
     margin-left: auto;
     margin-right: auto;
     grid-column: 1;
   }
   .sobre-euLeft img {
-    width: 360px;
+    width: 400px;
     justify-content: center;
   }
-
   .sobre-euCont {
     display: block;
     justify-content: center;
   }
-
+  /* LADO DIREITO DO SOBRE CONTAINER */
   .sobre-euRight {
     padding: 10px 0px;
-    grid-column: 2;
+    grid-column: 1;
   }
+  /* TITULO "SOBRE MIM" */
   .sobre-euRight h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding-left: 10px;
+    color: var(--red-color);
   }
-
+  /* PSEUDO CLASSE NO TITULO */
+  .sobre-euRight h1::before {
+    background-color: var(--purple-color);
+  }
   .sobre-euCard {
     max-width: 100%;
     padding: 10px;
   }
-
-  .sobre-euCard ul li {
-    justify-content: start;
-    padding-right: 40px;
-  }
-
   .sobre-euCard p {
-    font-size: 1.1rem;
-    color: var(--black-color);
+    font-size: 1.25rem;
   }
-
   .sobre-euCard .euCard-imagem {
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
   }
-
+  .sobre-euCard ul li {
+    padding-right: 80px;
+  }
   .sobre-euCard ol {
     max-width: 100%;
-    font-size: 1.1rem;
   }
-} */
+  .sobre-euCard ol li {
+    padding-bottom: 5px;
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+}
 @media (max-width: 600px) {
   .sobre-bg {
     height: 100%;

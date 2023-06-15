@@ -139,6 +139,60 @@
 }
 
 /* ----------------------------------- */
+@media (max-width: 800px) {
+  .work-bg {
+    height: 100%;
+  }
+  /* TITULO NO CONTEUDO - WORK RECENTES */
+  .work-conteudo h1::before {
+    background-color: var(--red-color);
+  }
+  .work-conteudo h1 {
+    font-size: 2rem;
+    padding-bottom: 0px;
+  }
+  /* ----------------------- */
+  .work-title a {
+    margin-right: 0px;
+  }
+  .work-title a > p {
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--purple-color);
+  }
+  /* ----------------------- */
+  .work-cardCont {
+    overflow-x: scroll;
+    padding: 10px;
+    margin: 0px;
+  }
+  .work-card {
+    width: 300px;
+    height: 380px;
+    margin: 10px;
+    border: none;
+  }
+  .work-card:nth-child(n+1) {
+    display: block;
+  }
+  .work-card figure img {
+    height: 100%;
+    border: none;
+  }
+  /* INFORMACOES NO CARD */
+  .work-cardText {
+    border: none;
+  }
+  /* NOME DO PROJETO WORD */
+  .work-card .work-cardText h3 {
+    font-size: 1.2rem;
+    color: var(--black-color);
+    border-bottom: 1px solid var(--red-color);
+  }
+  .work-card .work-cardText .work-descricao {
+    font-size: 1.1rem;
+    -webkit-line-clamp: 5; /* number of lines to show */
+  }
+}
 @media (max-width: 600px) {
   .work-bg {
     height: 100%;
