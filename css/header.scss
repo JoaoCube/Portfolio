@@ -2,7 +2,7 @@
   background-color: none;
 }
 .header {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -60,6 +60,9 @@
   .header {
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .header-menu {

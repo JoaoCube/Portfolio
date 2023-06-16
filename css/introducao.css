@@ -143,6 +143,7 @@
 @media (max-width: 800px) {
   .introducao-bg {
     height: 100%;
+    background: linear-gradient(to bottom, #f9f9fc, #ffffff);
   }
   .informacao-cont {
     justify-content: center;

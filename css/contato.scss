@@ -1,7 +1,7 @@
 @mixin footer-bg-definicao {
   height: 100%;
   color: var(--white-color);
-  background-color: var(--white-color);
+  background: linear-gradient(to top, #f9f9fc, #ffffff);
   padding-top: 40px;
 }
 .footer-bg {

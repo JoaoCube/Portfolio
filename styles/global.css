@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .introducao-bg {
-    background: var(--black2-color);
+    background: linear-gradient(to top, #131313, #0e0e0e);
   }
 
   .info-left .title {
@@ -77,11 +77,12 @@ body::-webkit-scrollbar-thumb {
 
   /* AREA DO WORK */
   .work-bg {
-    background-color: var(--black3-color);
+    background: linear-gradient(to bottom, #131313, #0e0e0e);
   }
 
   .work-card {
     background-color: var(--white--full);
+    border: none;
   }
 
   .work-conteudo h1 {
@@ -90,11 +91,11 @@ body::-webkit-scrollbar-thumb {
 
   /* AREA DA EXPERIENCIA */
   .experiencia-bg {
-    background-color: var(--black2-color);
+    background: linear-gradient(to bottom, #131313, #0e0e0e);
   }
   /* AREA DO CONTATO FOOTER */
   .footer-bg {
-    background-color: var(--black2-color);
+    background: linear-gradient(to top, #131313, #0e0e0e);
   }
 
   .footer-direitos {
@@ -154,10 +155,6 @@ body::-webkit-scrollbar-thumb {
 
     .work-bg {
       background-color: transparent;
-    }
-
-    .footer-bg {
-      background-color: var(--black2-color);
     }
 
     .footer-direitos {
