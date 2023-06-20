@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,6 @@
   <meta name="description" content="Desenvolvedor Front End e UI/UX Designer Localizado no Amazonas">
 
   <link rel="stylesheet" href="./styles/style.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,41 +24,512 @@
   </a>
   <!--FIM BOTAO DE VOLTAR AO TOPO-->
 
-  <header class="header-bg">
-    <div class="header">
-      <a href="index.html">
-        <img src="./icons/cube-logo.svg" alt="Logomarca" class="logo"></a>
+  <main>
+    <header class="header-bg">
+      <div class="header">
+        <a href="index.html">
+          <img src="./icons/cube-logo.svg" alt="Logomarca" class="logo"></a>
 
-      <nav aria-label="primaria">
-        <ul class="header-menu">
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#work">Projetos</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#contato">Contato</a></li>
+        <nav aria-label="primaria">
+          <ul class="header-menu">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#work">Projetos</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contato">Contato</a></li>
 
-          <div class="modes">
-            <img width="50px" src="./icons/sun.svg" alt="" id="icon">
+            <div class="modes">
+              <img width="50px" src="./icons/sun.svg" alt="" id="icon">
+            </div>
+          </ul>
+        </nav> <!-- FIM NAVBAR CONTAINER -->
+
+      </div> <!-- FIM HEADER -->
+    </header> <!-- FIM HEADER BG -->
+    <!-- ----------------------------------------------- -->
+
+    <section class="introducao-bg">
+      <div class="introducao-container">
+        <div class="introducao-conteudo">
+          <div class="informacao-cont">
+            <div class="info-left typeWriter ">
+              <h1 id="text" class="title">I’m Joao Cube, a Front End Developer!</h1>
+              <p>Olá, meu nome é João Victor (ou 'artisticamente' João Cube). Tenho 23 anos, estou cursando Ciência da Computação e também faço UI/UX Designer.</p>
+
+              <!-- ICONES DE REDE SOCIAL -->
+              <div class="icons-cont">
+                <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg></a>
+
+                <a href="https://www.instagram.com/_joaocube/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg></a>
+
+                <a href="https://github.com/JoaoCube" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg></a>
+
+                <a href="#" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg> </a>
+              </div> <!-- FIM ICONS CONT -->
+
+              <article class="form-bg">
+                <div class="form-container">
+
+                  <form action="./" class="form-conteudo">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Endereco de Email 📩" class="btn-email">
+                    <input type="submit" value="Conectar Comigo" class="btn-enviar">
+                  </form>
+
+                </div>
+              </article>
+            </div> <!-- FIM INFO LEFT -->
+
+            <div class="info-right">
+              <div>
+                <img src="./imgs/eu-intro.png">
+              </div>
+
+            </div>
+          </div> <!-- FIM INFORMACAO CONT -->
+
+        </div> <!-- FIM SOBRE CONTEUDO -->
+      </div> <!-- FIM SOBRE CONTAINER -->
+    </section> <!-- FIM SOBRE BG -->
+
+    <section class="sobre-bg box" id="sobre">
+
+      <section class="caracteristicas-bg box" data-anime="right">
+        <article class="caracteristicas-container">
+          <div class="caracteristicas-conteudo">
+            <div class="left-caracteristicas">
+
+              <div class="number-title">
+                <h3>15<span>+</span></h3>
+                <p>projetos feitos</p>
+              </div>
+
+              <div class="number-title">
+                <h3>1<span>+</span></h3>
+                <p>ano de experiência</p>
+              </div>
+
+              <div class="number-title">
+                <h3>12<span>+</span></h3>
+                <p>clientes atendidos</p>
+              </div>
+
+              <div class="number-title">
+                <h3>9<span>+</span></h3>
+                <p>projetos voluntários</p>
+              </div>
+
+              <div class="number-title">
+                <h3>7<span>+</span></h3>
+                <p>tecnologias utilizadas</p>
+              </div>
+
+            </div>
           </div>
-        </ul>
-      </nav> <!-- FIM NAVBAR CONTAINER -->
+        </article> <!-- FIM CARACTER CONTAINER -->
+      </section> <!-- FIM CARACTER BG -->
 
-    </div> <!-- FIM HEADER -->
-  </header> <!-- FIM HEADER BG -->
-  <!-- ----------------------------------------------- -->
+      <article class="sobre-container">
 
-  <section class="introducao-bg">
-    <div class="introducao-container">
-      <div class="introducao-conteudo">
-        <div class="informacao-cont">
-          <div class="info-left typeWriter ">
-            <h1 id="text" class="title">I’m Joao Cube, a Front End Developer!</h1>
-            <p>Olá, meu nome é João Victor (ou 'artisticamente' João Cube). Tenho 23 anos, estou cursando Ciência da Computação e também faço UI/UX Designer.</p>
+        <div class="sobre-conteudo">
 
-            <!-- ICONES DE REDE SOCIAL -->
-            <div class="icons-cont">
-              <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                </svg></a>
+          <div class="sobre-euLeft">
+            <img src="./imgs/eu-perfil2.png" alt="eu personagem">
+          </div> <!-- FIM SOBRE EU LEFT -->
+
+          <div class="sobre-euRight about">
+            <h1>SOBRE MIM</h1>
+            <div class="sobre-euCont">
+
+              <div class="sobre-euCard">
+                <h2>Descrição<img src="./imgs/cubo.png" alt="cubo"></h2>
+                <p>Oi, meu nome é João Victor, sou um desenvolvedor Front End, UI & UX Designer e moro em Manaus/AM📍. Comecei a programar bem por acaso quando pensei: "É muito difícil fazer um site? Vou tentar!". Comecei a aprender no primeiro dia do ano de madrugada e desde então fiquei praticando, minha primeira oportunidade foi com landing pages.</p>
+
+              </div> <!-- FIM DIV  1-->
+
+              <div class="sobre-euCard">
+                <h2>Habilidades<img src="./imgs/cubo.png" alt="habilidades"></h2>
+
+                <ul>
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1" class="euCard-imagem" /></li>
+
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/css3.png" alt="css3" class="euCard-imagem" /></li>
+
+                  <li><img width="96" height="96" src="https://img.icons8.com/fluency/96/tailwind_css.png" alt="tailwind_css" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
+
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript--v1" class="euCard-imagem" /></li>
+                </ul>
+
+                <ul>
+                  <li> <img width="96" height="96" src="https://img.icons8.com/color/96/npm.png" alt="npm" class="euCard-imagem" /></li>
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/git.png" alt="git" class="euCard-imagem" /></li>
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/figma--v1.png" alt="figma--v1" class="euCard-imagem" /></li>
+                  <li> <img width="96" height="96" src="https://img.icons8.com/color/96/sass.png" alt="sass" title="Ainda nao utilizada" class="euCard-imagem" /></li>
+                </ul>
+
+                <ul>
+                  <li><img width="64" height="64" src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/external-responsive-big-data-xnimrodx-blue-xnimrodx.png" alt="external-responsive-big-data-xnimrodx-blue-xnimrodx" class="euCard-imagem" /></li>
+
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/react-native.png" alt="react-native" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
+
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/bootstrap.png" alt="bootstrap" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
+
+                  <li><img width="96" height="96" src="https://img.icons8.com/color/96/typescript.png" alt="typescript" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
+                </ul>
+
+              </div> <!-- FIM DIV - SKILLS 2-->
+
+              <div class="sobre-euCard">
+                <h2>Curiosidades<img src="./imgs/cubo.png" alt="habilidades"></h2>
+                <!-- <p>Literalmente a nivel de curiosidade!</p> -->
+                <ol>
+                  <li>✔️Sou formado em mecânica aeronáutica no módulo de Grupo Motopropulsor (GMP).</li>
+                  <li>✔️Já fui Jovem Parlamentar no ano de 2017, pela Escola Professor Julio Cesar de Moraes Passos.</li>
+                  <li>✔️Fui editor de imagem e também fiz motion design antes de começar a programar.</li>
+                </ol>
+              </div> <!-- FIM DIV - CURIOSIDADE 3-->
+
+            </div> <!-- FIM SOBRE EU CONT  -->
+          </div> <!-- FIM SOBRE EU RIGHT -->
+
+        </div> <!-- FIM CARACTER CONTEUDO -->
+
+      </article> <!-- FIM CARACTER CONTAINER -->
+    </section> <!-- FIM CARACTER BG -->
+
+    <!-- ----------------------------------------------- -->
+    <section class="work-bg box" id="work">
+      <article class="work-container">
+
+        <div class="work-conteudo">
+          <h1>PROJETOS</h1>
+
+          <!-- LISTA 1 - WORKS -->
+          <div class="work-cardCont">
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/site-ANIME.png" alt="Cube Animes">
+              </figure>
+              <div class="work-cardText">
+                <div class="work-title">
+                  <a href="#">
+                    <h3>CubeAnimes 👈🏻</h3>
+                  </a>
+
+                  <a href="">
+                    <p>Codigo</p>
+                  </a>
+                </div>
+
+                <p class="work-descricao">Site de anime para assistir e baixar via drive. Inspirado nos sites: "SaikoAnimes" e "9animes". Projeto ficticio feito para fins de estudos.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+              </div> <!-- FIM WORK CARD TEXT -->
+
+            </div> <!-- FIM WORK CARD 1-->
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/site-bikcraft.png">
+              </figure>
+              <div class="work-cardText">
+
+                <div class="work-title">
+                  <a href="https://joaocube.github.io/-joaocube.github.io/" target="_blank">
+                    <h3>Bikcraft 👈🏻</h3>
+                  </a>
+                  <a href="https://github.com/JoaoCube/-joaocube.github.io?search=1" target="_blank">
+                    <p>Codigo</p>
+                  </a>
+                </div>
+
+                <p class="work-descricao">Site que simula um e-commerce online de vendas de bicicletas tecnologicas e artesanais. Projeto ficticio para fins de estudos.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+              </div>
+            </div> <!-- FIM WORK CARD 2-->
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/placeholder2.png">
+              </figure>
+              <div class="work-cardText">
+
+                <div class="work-title">
+                  <a href="">
+                    <h3>Lorem Ipsum 👈🏻</h3>
+                  </a>
+                  <a href="">
+                    <p>Codigo</p>
+                  </a>
+                </div>
+
+                <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+              </div>
+            </div> <!-- FIM WORK CARD 3-->
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/site-IMC.png">
+              </figure>
+              <div class="work-cardText">
+
+                <div class="work-title">
+                  <a href="https://joaocube.github.io/CalculadoraIMC/" target="_blank">
+                    <h3>Calcular IMC 👈🏻</h3>
+                  </a>
+                  <a href="https://github.com/JoaoCube/CalculadoraIMC" target="_blank">
+                    <p>Codigo</p>
+                  </a>
+                </div>
+
+                <p class="work-descricao">Codigo para fazer calculo do seu Indice de Massa Corporal. Utilizando matematica basica com conceitos de logica de programacao.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+
+              </div>
+            </div> <!-- FIM WORK CARD 4-->
+
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/placeholder.jpg">
+              </figure>
+              <div class="work-cardText">
+
+                <div class="work-title">
+                  <a href="">
+                    <h3>Lorem Ipsum 👈🏻</h3>
+                  </a>
+                  <a href="">
+                    <p class="riscado">Codigo</p>
+                  </a>
+                </div>
+
+                <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+              </div>
+            </div> <!-- FIM WORK CARD 5-->
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/placeholder2.png">
+              </figure>
+              <div class="work-cardText">
+
+                <div class="work-title">
+                  <a href="">
+                    <h3>Lorem Ipsum 👈🏻</h3>
+                  </a>
+                  <a href="">
+                    <p class="riscado">Codigo</p>
+                  </a>
+                </div>
+
+                <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+
+              </div>
+            </div> <!-- FIM WORK CARD 6-->
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/placeholder.jpg">
+              </figure>
+              <div class="work-cardText">
+                <div class="work-title">
+                  <a href="">
+                    <h3>CubeAnimes 👈🏻</h3>
+                  </a>
+                  <a href="">
+                    <p class="riscado">Codigo</p>
+                  </a>
+                </div>
+                <p class="work-descricao">Site de anime para assistir e baixar via drive. Inspirado nos sites: "SaikoAnimes" e "9animes". Projeto ficticio feito para fins de estudos.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+
+              </div>
+            </div> <!-- FIM WORK CARD 7-->
+
+            <div class="work-card">
+              <figure>
+                <img src="./imgs/placeholder2.png">
+              </figure>
+              <div class="work-cardText">
+
+                <div class="work-title">
+                  <a href="">
+                    <h3>Lorem Ipsum 👈🏻</h3>
+                  </a>
+                  <a href="">
+                    <p class="riscado">Codigo</p>
+                  </a>
+                </div>
+
+                <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                <div class="work-icons">
+                  <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
+                  <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
+                </div> <!-- FIM WORK ICONS -->
+
+              </div>
+            </div> <!-- FIM WORK CARD 8-->
+          </div> <!-- FIM LISTA WORKS 1 -->
+
+        </div> <!-- FIM WORK CONTEUDO -->
+      </article> <!-- FIM WORK CONTAINER -->
+    </section> <!-- FIM WORK BG -->
+
+    <section class="experiencia-bg box" id="experiencia">
+      <article class="experiencia-container">
+
+        <div class="experiencia-conteudo">
+          <h1>Experiência e educação</h1>
+
+          <div class="xp-cardCont">
+
+            <div class="xp-card">
+              <h2>Faculdade - Bacharelado</h2>
+              <h3>Ciencia da Computacao - <span class="xp-span">Estacio de Sa</span></h3>
+              <p>Cursando - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>HTML5 e CSS3 - <span class="xp-span">Origamid</span></h3>
+              <p>52h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>HTML5 e CSS3 na Pratica - <span class="xp-span">Fundacao Bradesco</span></h3>
+              <p>26h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>UI & UX Design - <span class="xp-span">Origamid</span></h3>
+              <p>40h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>JavaScript Completo ES6- <span class="xp-span">Origamid</span></h3>
+              <p>46h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>CSS Grid Layout - <span class="xp-span">Origamid</span></h3>
+              <p>5h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>CSS Flexbox - <span class="xp-span">Origamid</span></h3>
+              <p>3h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>HTML5 Basico/Avancado - <span class="xp-span">Fundacao Bradesco</span></h3>
+              <p>17h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>CSS com SASS - <span class="xp-span">Origamid</span></h3>
+              <p>6h - 2023</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>Bootstrap 4 - <span class="xp-span">Origamid</span></h3>
+              <p>5h - 2023</p>
+            </div>
+            <!-- ABAIXO PLACEHOLDER -->
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
+              <p>00h - 2000</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
+              <p>00h - 2000</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
+              <p>00h - 2000</p>
+            </div>
+            <div class="xp-card">
+              <h2>Curso</h2>
+              <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
+              <p>00h - 2000</p>
+            </div>
+
+          </div> <!-- FIM CARD CONT -->
+
+        </div> <!-- FIM EXPERIENCIA CONTEUDO -->
+      </article> <!-- FIM EXPERIENCIA CONTAINER -->
+    </section> <!-- FIM EXPERIENCIA BG -->
+
+    <!-- ---------------------------------------------------------- -->
+    <footer class="footer-bg " id="contato">
+      <div class="footer-container">
+        <div class="footer-conteudo">
+          <img src="./icons/cube-logo.svg" alt="logomarca">
+
+          <div class="footer-contato">
+            <ul>
+              <h3>Contato</h3>
+              <li><a href="#">+55 92 9999-9999</a></li>
+              <li><a href="#">joaocube@outlook.com</a></li>
+              <li>Rua Existente - Flores</li>
+              <li>Manaus - AM</li>
+            </ul>
+            <div class="footer-redes">
 
               <a href="https://www.instagram.com/_joaocube/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
@@ -69,494 +539,25 @@
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                 </svg></a>
 
-              <a href="#" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                </svg> </a>
-            </div> <!-- FIM ICONS CONT -->
-
-            <article class="form-bg">
-              <div class="form-container">
-
-                <form action="./" class="form-conteudo">
-                  <label for="email"></label>
-                  <input type="email" id="email" name="email" placeholder="Endereco de Email 📩" class="btn-email">
-                  <input type="submit" value="Conectar Comigo" class="btn-enviar">
-                </form>
-
-              </div>
-            </article>
-          </div> <!-- FIM INFO LEFT -->
-
-          <div class="info-right">
-            <div>
-              <img src="./imgs/eu-intro.png">
-            </div>
-
-          </div>
-        </div> <!-- FIM INFORMACAO CONT -->
-
-      </div> <!-- FIM SOBRE CONTEUDO -->
-    </div> <!-- FIM SOBRE CONTAINER -->
-  </section> <!-- FIM SOBRE BG -->
-
-  <section class="sobre-bg box" id="sobre">
-
-    <section class="caracteristicas-bg box" data-anime="right">
-      <article class="caracteristicas-container">
-        <div class="caracteristicas-conteudo">
-          <div class="left-caracteristicas">
-
-            <div class="number-title">
-              <h3>15<span>+</span></h3>
-              <p>projetos feitos</p>
-            </div>
-
-            <div class="number-title">
-              <h3>1<span>+</span></h3>
-              <p>ano de experiência</p>
-            </div>
-
-            <div class="number-title">
-              <h3>12<span>+</span></h3>
-              <p>clientes atendidos</p>
-            </div>
-
-            <div class="number-title">
-              <h3>9<span>+</span></h3>
-              <p>projetos voluntários</p>
-            </div>
-
-            <div class="number-title">
-              <h3>7<span>+</span></h3>
-              <p>tecnologias utilizadas</p>
-            </div>
-
-          </div>
-        </div>
-      </article> <!-- FIM CARACTER CONTAINER -->
-    </section> <!-- FIM CARACTER BG -->
-
-    <article class="sobre-container">
-
-      <div class="sobre-conteudo">
-
-        <div class="sobre-euLeft">
-          <img src="./imgs/eu-perfil2.png" alt="eu personagem">
-        </div> <!-- FIM SOBRE EU LEFT -->
-
-        <div class="sobre-euRight about">
-          <h1>SOBRE MIM</h1>
-          <div class="sobre-euCont">
-
-            <div class="sobre-euCard">
-              <h2>Descrição<img src="./imgs/cubo.png" alt="cubo"></h2>
-              <p>Oi, meu nome é João Victor, sou um desenvolvedor Front End, UI & UX Designer e moro em Manaus/AM📍. Comecei a programar bem por acaso quando pensei: "É muito difícil fazer um site? Vou tentar!". Comecei a aprender no primeiro dia do ano de madrugada e desde então fiquei praticando, minha primeira oportunidade foi com landing pages.</p>
-
-            </div> <!-- FIM DIV  1-->
-
-            <div class="sobre-euCard">
-              <h2>Habilidades<img src="./imgs/cubo.png" alt="habilidades"></h2>
-
-              <ul>
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1" class="euCard-imagem" /></li>
-
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/css3.png" alt="css3" class="euCard-imagem" /></li>
-
-                <li><img width="96" height="96" src="https://img.icons8.com/fluency/96/tailwind_css.png" alt="tailwind_css" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
-
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript--v1" class="euCard-imagem" /></li>
-              </ul>
-
-              <ul>
-                <li> <img width="96" height="96" src="https://img.icons8.com/color/96/npm.png" alt="npm" class="euCard-imagem" /></li>
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/git.png" alt="git" class="euCard-imagem" /></li>
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/figma--v1.png" alt="figma--v1" class="euCard-imagem" /></li>
-                <li> <img width="96" height="96" src="https://img.icons8.com/color/96/sass.png" alt="sass" title="Ainda nao utilizada" class="euCard-imagem" /></li>
-              </ul>
-
-              <ul>
-                <li><img width="64" height="64" src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/external-responsive-big-data-xnimrodx-blue-xnimrodx.png" alt="external-responsive-big-data-xnimrodx-blue-xnimrodx" class="euCard-imagem" /></li>
-
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/react-native.png" alt="react-native" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
-
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/bootstrap.png" alt="bootstrap" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
-
-                <li><img width="96" height="96" src="https://img.icons8.com/color/96/typescript.png" alt="typescript" title="Ainda nao utilizada" class="euCard-imagem not" /></li>
-              </ul>
-
-            </div> <!-- FIM DIV - SKILLS 2-->
-
-            <div class="sobre-euCard">
-              <h2>Curiosidades<img src="./imgs/cubo.png" alt="habilidades"></h2>
-              <!-- <p>Literalmente a nivel de curiosidade!</p> -->
-              <ol>
-                <li>✔️Sou formado em mecânica aeronáutica no módulo de Grupo Motopropulsor (GMP).</li>
-                <li>✔️Já fui Jovem Parlamentar no ano de 2017, pela Escola Professor Julio Cesar de Moraes Passos.</li>
-                <li>✔️Fui editor de imagem e também fiz motion design antes de começar a programar.</li>
-              </ol>
-            </div> <!-- FIM DIV - CURIOSIDADE 3-->
-
-          </div> <!-- FIM SOBRE EU CONT  -->
-        </div> <!-- FIM SOBRE EU RIGHT -->
-
-      </div> <!-- FIM CARACTER CONTEUDO -->
-
-    </article> <!-- FIM CARACTER CONTAINER -->
-  </section> <!-- FIM CARACTER BG -->
-
-  <!-- ----------------------------------------------- -->
-  <section class="work-bg box" id="work">
-    <article class="work-container">
-
-      <div class="work-conteudo">
-        <h1>PROJETOS</h1>
-
-        <!-- LISTA 1 - WORKS -->
-        <div class="work-cardCont">
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/site-ANIME.png" alt="Cube Animes">
-            </figure>
-            <div class="work-cardText">
-              <div class="work-title">
-                <a href="#">
-                  <h3>CubeAnimes 👈🏻</h3>
-                </a>
-
-                <a href="">
-                  <p>Codigo</p>
-                </a>
-              </div>
-
-              <p class="work-descricao">Site de anime para assistir e baixar via drive. Inspirado nos sites: "SaikoAnimes" e "9animes". Projeto ficticio feito para fins de estudos.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-            </div> <!-- FIM WORK CARD TEXT -->
-
-          </div> <!-- FIM WORK CARD 1-->
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/site-bikcraft.png">
-            </figure>
-            <div class="work-cardText">
-
-              <div class="work-title">
-                <a href="https://joaocube.github.io/-joaocube.github.io/" target="_blank">
-                  <h3>Bikcraft 👈🏻</h3>
-                </a>
-                <a href="https://github.com/JoaoCube/-joaocube.github.io?search=1" target="_blank">
-                  <p>Codigo</p>
-                </a>
-              </div>
-
-              <p class="work-descricao">Site que simula um e-commerce online de vendas de bicicletas tecnologicas e artesanais. Projeto ficticio para fins de estudos.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-            </div>
-          </div> <!-- FIM WORK CARD 2-->
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/placeholder.jpg">
-            </figure>
-            <div class="work-cardText">
-
-              <div class="work-title">
-                <a href="">
-                  <h3>Lorem Ipsum 👈🏻</h3>
-                </a>
-                <a href="">
-                  <p>Codigo</p>
-                </a>
-              </div>
-
-              <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-            </div>
-          </div> <!-- FIM WORK CARD 3-->
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/site-IMC.png">
-            </figure>
-            <div class="work-cardText">
-
-              <div class="work-title">
-                <a href="https://joaocube.github.io/CalculadoraIMC/" target="_blank">
-                  <h3>Calcular IMC 👈🏻</h3>
-                </a>
-                <a href="https://github.com/JoaoCube/CalculadoraIMC" target="_blank">
-                  <p>Codigo</p>
-                </a>
-              </div>
-
-              <p class="work-descricao">Codigo para fazer calculo do seu Indice de Massa Corporal. Utilizando matematica basica com conceitos de logica de programacao.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-
-            </div>
-          </div> <!-- FIM WORK CARD 4-->
-
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/placeholder.jpg">
-            </figure>
-            <div class="work-cardText">
-
-              <div class="work-title">
-                <a href="">
-                  <h3>Lorem Ipsum 👈🏻</h3>
-                </a>
-                <a href="">
-                  <p class="riscado">Codigo</p>
-                </a>
-              </div>
-
-              <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-            </div>
-          </div> <!-- FIM WORK CARD 5-->
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/placeholder2.png">
-            </figure>
-            <div class="work-cardText">
-
-              <div class="work-title">
-                <a href="">
-                  <h3>Lorem Ipsum 👈🏻</h3>
-                </a>
-                <a href="">
-                  <p class="riscado">Codigo</p>
-                </a>
-              </div>
-
-              <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-
-            </div>
-          </div> <!-- FIM WORK CARD 6-->
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/placeholder.jpg">
-            </figure>
-            <div class="work-cardText">
-              <div class="work-title">
-                <a href="">
-                  <h3>CubeAnimes 👈🏻</h3>
-                </a>
-                <a href="">
-                  <p class="riscado">Codigo</p>
-                </a>
-              </div>
-              <p class="work-descricao">Site de anime para assistir e baixar via drive. Inspirado nos sites: "SaikoAnimes" e "9animes". Projeto ficticio feito para fins de estudos.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-
-            </div>
-          </div> <!-- FIM WORK CARD 7-->
-
-          <div class="work-card">
-            <figure>
-              <img src="./imgs/placeholder2.png">
-            </figure>
-            <div class="work-cardText">
-
-              <div class="work-title">
-                <a href="">
-                  <h3>Lorem Ipsum 👈🏻</h3>
-                </a>
-                <a href="">
-                  <p class="riscado">Codigo</p>
-                </a>
-              </div>
-
-              <p class="work-descricao">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-
-              <div class="work-icons">
-                <i class="fa-brands fa-html5 fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-sass fa-xl" style="color: #0e0e0e;"></i>
-                <i class="fa-brands fa-js fa-xl" style="color: #0e0e0e;"></i>
-              </div> <!-- FIM WORK ICONS -->
-
-            </div>
-          </div> <!-- FIM WORK CARD 8-->
-        </div> <!-- FIM LISTA WORKS 1 -->
-
-      </div> <!-- FIM WORK CONTEUDO -->
-    </article> <!-- FIM WORK CONTAINER -->
-  </section> <!-- FIM WORK BG -->
-
-  <section class="experiencia-bg box" id="experiencia">
-    <article class="experiencia-container">
-
-      <div class="experiencia-conteudo">
-        <h1>Experiência e educação</h1>
-
-        <div class="xp-cardCont">
-
-          <div class="xp-card">
-            <h2>Faculdade - Bacharelado</h2>
-            <h3>Ciencia da Computacao - <span class="xp-span">Estacio de Sa</span></h3>
-            <p>Cursando - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>HTML5 e CSS3 - <span class="xp-span">Origamid</span></h3>
-            <p>52h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>HTML5 e CSS3 na Pratica - <span class="xp-span">Fundacao Bradesco</span></h3>
-            <p>26h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>UI & UX Design - <span class="xp-span">Origamid</span></h3>
-            <p>40h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>JavaScript Completo ES6- <span class="xp-span">Origamid</span></h3>
-            <p>46h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>CSS Grid Layout - <span class="xp-span">Origamid</span></h3>
-            <p>5h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>CSS Flexbox - <span class="xp-span">Origamid</span></h3>
-            <p>3h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>HTML5 Basico/Avancado - <span class="xp-span">Fundacao Bradesco</span></h3>
-            <p>17h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>CSS com SASS - <span class="xp-span">Origamid</span></h3>
-            <p>6h - 2023</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>Bootstrap 4 - <span class="xp-span">Origamid</span></h3>
-            <p>5h - 2023</p>
-          </div>
-          <!-- ABAIXO PLACEHOLDER -->
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
-            <p>00h - 2000</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
-            <p>00h - 2000</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
-            <p>00h - 2000</p>
-          </div>
-          <div class="xp-card">
-            <h2>Curso</h2>
-            <h3>Nome do Curso - <span class="xp-span">Instituicao</span></h3>
-            <p>00h - 2000</p>
-          </div>
-
-        </div> <!-- FIM CARD CONT -->
-
-      </div> <!-- FIM EXPERIENCIA CONTEUDO -->
-    </article> <!-- FIM EXPERIENCIA CONTAINER -->
-  </section> <!-- FIM EXPERIENCIA BG -->
-
-  <!-- ---------------------------------------------------------- -->
-  <footer class="footer-bg " id="contato">
-    <div class="footer-container">
-      <div class="footer-conteudo">
-        <img src="./icons/cube-logo.svg" alt="logomarca">
-
-        <div class="footer-contato">
-          <ul>
-            <h3>Contato</h3>
-            <li><a href="#">+55 92 9999-9999</a></li>
-            <li><a href="#">joaocube@outlook.com</a></li>
-            <li>Rua Existente - Flores</li>
-            <li>Manaus - AM</li>
-          </ul>
-          <div class="footer-redes">
-
-            <a href="https://www.instagram.com/_joaocube/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-              </svg></a>
-
-            <a href="https://github.com/JoaoCube" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-              </svg></a>
-
-            <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-              </svg></a>
-
-            <a href="https://www.youtube.com/channel/UCRBlj96alUHNP7Ps2gA_9DQ" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-              </svg>
-            </a>
-
-          </div> <!-- FIM FOOTER REDES -->
-
-        </div> <!-- FIM FOOTER CONTATO -->
-      </div> <!-- FIM FOOTER CONTEUDO -->
-
-      <p class="footer-direitos">CubeElement © Alguns direitos reservados.</p>
-    </div> <!-- FIM FOOTER CONTAINER -->
-  </footer>
+              <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg></a>
+
+              <a href="https://www.youtube.com/channel/UCRBlj96alUHNP7Ps2gA_9DQ" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                </svg>
+              </a>
+
+            </div> <!-- FIM FOOTER REDES -->
+
+          </div> <!-- FIM FOOTER CONTATO -->
+        </div> <!-- FIM FOOTER CONTEUDO -->
+
+        <p class="footer-direitos">CubeElement © Alguns direitos reservados.</p>
+      </div> <!-- FIM FOOTER CONTAINER -->
+    </footer>
+  </main>
 
   <script src="./styles/script.js"></script>
   <a target="_blank" href="https://icons8.com/icon/nm86OWXFdc1P/1-key"></a>
