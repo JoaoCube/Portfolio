@@ -160,13 +160,13 @@ body::-webkit-scrollbar-thumb {
 } /* FIM DO DARK THEME */
 @media (max-width: 800px) {
   .modes {
-    z-index: 80;
+    z-index: 88;
     background-color: var(--cor-7);
     width: 32px;
     height: 32px;
     padding: 10px;
     border-radius: 50%;
-    top: 92vh;
+    top: 85vh;
     right: 10px;
     position: fixed;
     cursor: pointer;
