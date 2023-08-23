@@ -131,7 +131,7 @@
     width: auto;
     height: auto;
     border-radius: 30px;
-    border: 2px solid var(--cor-8);
+    border: 1px solid var(--cor-8);
   }
   .xp-right h1 {
     text-align: center;
@@ -191,7 +191,7 @@
     width: auto;
     height: auto;
     border-radius: 30px;
-    border: 2px solid var(--cor-8);
+    border: 1px solid var(--cor-8);
   }
   .xp-right h1 {
     text-align: center;
@@ -204,11 +204,12 @@
   .xp-left ul {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .xp-left ul li {
     min-width: 140px;
     display: flex;
+    padding-left: 10px;
     margin: 10px auto;
     justify-content: left;
     align-items: center;
@@ -226,9 +227,10 @@
   }
   .xp-right ul li {
     min-width: 140px;
+    display: flex;
+    padding-left: 10px;
+    margin: 10px auto;
     justify-content: left;
     align-items: center;
-    display: flex;
-    margin: 10px auto;
   }
 }

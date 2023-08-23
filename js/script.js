@@ -53,14 +53,3 @@ function typeWriter(elemento) {
 }
 const titulo = document.querySelector("h1");
 typeWriter(titulo);
-
-// MUDANCA PRO DARK MODE
-let icon = document.getElementById("icon");
-icon.onclick = function () {
-  document.body.classList.toggle("dark-theme");
-  if (document.body.classList.contains("dark-theme")) {
-    icon.src = "./Publics/icons/moon.png";
-  } else {
-    icon.src = "./Publics/icons/sun.svg";
-  }
-};
