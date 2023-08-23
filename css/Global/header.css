@@ -17,11 +17,6 @@
   align-items: center;
   gap: 20px;
 }
-#menu .modes {
-  width: 32px;
-  margin-top: 6px;
-  cursor: pointer;
-}
 
 #menu a {
   display: block;
@@ -63,19 +58,17 @@
     overflow-y: hidden;
   }
   #nav.active #menu {
-    height: calc(100vh - 590px);
+    height: calc(100vh - 650px);
     color: var(--cor-2);
     padding: 20px;
     visibility: visible;
     overflow-x: auto;
+    border: 1px solid var(--cor-8);
   }
   #menu a {
+    text-align: center;
     padding: 10px 20px;
     font-size: 1.4rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-  }
-  #menu .modes {
-    margin-left: 16px;
   }
   #btn-mobile {
     display: flex;

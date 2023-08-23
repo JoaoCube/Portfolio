@@ -29,6 +29,19 @@ a {
 body {
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.modes {
+  background-color: var(--cor-7);
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  border-radius: 50%;
+  top: 92vh;
+  right: 6px;
+  position: fixed;
+  cursor: pointer;
 }
 
 body::-webkit-scrollbar {
@@ -145,3 +158,17 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 10px;
   }
 } /* FIM DO DARK THEME */
+@media (max-width: 800px) {
+  .modes {
+    z-index: 80;
+    background-color: var(--cor-7);
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    border-radius: 50%;
+    top: 92vh;
+    right: 10px;
+    position: fixed;
+    cursor: pointer;
+  }
+}
