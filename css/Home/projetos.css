@@ -47,6 +47,24 @@
   height: 400px;
   background-color: var(--cor-9);
 }
+.area-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+.area-imagem #projeto1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.area-imagem #projeto3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
 
 .card-item .area-button {
   max-width: 100%;
@@ -88,10 +106,11 @@
   }
   .projetos-cards .card-item {
     border-radius: 30px;
+    margin: 0px 20px;
     padding: 20px;
     border: 1px solid var(--cor-8);
     background-color: var(--cor-7);
-    width: auto;
+    width: 320px;
     max-height: 340px;
     text-align: center;
   }
