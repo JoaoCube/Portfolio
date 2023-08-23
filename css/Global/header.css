@@ -1,6 +1,7 @@
 .header-bg {
   width: 100%;
   box-sizing: border-box;
+  background-color: var(--cor-10);
   padding: 40px;
 }
 .header-conteudo {
