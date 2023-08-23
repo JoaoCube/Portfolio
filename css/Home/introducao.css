@@ -9,7 +9,7 @@
 }
 
 .introducao-bg {
-  background-color: var(--cor-10);
+  background-color: rgba(rgb(255, 255, 255), 0);
   height: 90vh;
   overflow: hidden;
 }

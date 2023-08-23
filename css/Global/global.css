@@ -58,10 +58,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dark-theme {
+  transition: 1s ease-in-out;
   background-color: var(--cor-2);
 
   .header-bg {
-    background-color: var(--cor-7);
+    background-color: rgba(255, 255, 255, 1);
     color: var(--cor-2);
   }
   #menu {
@@ -70,7 +71,7 @@ body::-webkit-scrollbar-thumb {
 
   .introducao-bg {
     color: var(--cor-7);
-    background-color: var(--cor-2);
+    background-color: 22, 22, 22, 1;
   }
 
   .info-profile {
@@ -86,7 +87,9 @@ body::-webkit-scrollbar-thumb {
   .info-profile .icons-area {
     filter: invert(100);
   }
-
+  .sobre-bg {
+    background-color: var(--cor-2);
+  }
   .sobre-container .text-area h3 {
     color: var(--cor-9);
   }
@@ -139,9 +142,32 @@ body::-webkit-scrollbar-thumb {
     color: var(--cor-9);
   }
 
+  .projetos-container .text-area h3 {
+    color: var(--cor-8);
+  }
+  .projetos-container .text-area h1 {
+    color: var(--cor-10);
+  }
+  /* ----------------------- */
+  .contato-container .text-area h3 {
+    color: var(--cor-9);
+  }
+  .contato-container .text-area h1 {
+    color: var(--cor-10);
+  }
+  .card-contato .item-contato p {
+    color: var(--cor-10);
+  }
+  .card-contato .item-contato i {
+    filter: invert(100);
+  }
+
+  .lista-contato li a {
+    color: var(--cor-6);
+  }
   /* AREA DO CONTATO FOOTER */
   .footer-bg {
-    background: linear-gradient(to top, #131313, #0e0e0e);
+    background-color: var(--cor-7);
   }
 
   .footer-direitos {
