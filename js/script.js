@@ -16,7 +16,7 @@ header.innerHTML = `
     <li><a href="#projetos">Projects</a></li>
     <li><a href="#contato">Contact</a></li>
     <li class="modes">
-      <img width="32px" src="./publics/icons/sun.svg" alt="dark mode" id="icon">
+      <img width="32px" src="./publics/icons/sun.png" alt="dark mode" id="icon">
     </li>
   </ul>
 </nav>
@@ -64,8 +64,8 @@ let icon = document.getElementById("icon");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "./Publics/icons/moon.svg";
+    icon.src = "./Publics/icons/moon.png";
   } else {
-    icon.src = "./Publics/icons/sun.svg";
+    icon.src = "./Publics/icons/sun.png";
   }
 };
