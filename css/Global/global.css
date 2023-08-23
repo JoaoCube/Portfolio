@@ -29,6 +29,9 @@ a {
 body {
   justify-content: center;
   align-items: center;
+}
+
+main {
   position: relative;
 }
 
@@ -159,6 +162,9 @@ body::-webkit-scrollbar-thumb {
   }
 } /* FIM DO DARK THEME */
 @media (max-width: 800px) {
+  main {
+    position: relative;
+  }
   .modes {
     z-index: 88;
     background-color: var(--cor-7);
@@ -167,7 +173,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
     border-radius: 50%;
     top: 85vh;
-    right: 10px;
+    right: 20px;
     position: fixed;
     cursor: pointer;
   }
