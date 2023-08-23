@@ -16,7 +16,7 @@ header.innerHTML = `
     <li><a href="#projetos">Projects</a></li>
     <li><a href="#contato">Contact</a></li>
     <li class="modes">
-      <img width="32px" src="./publics/icons/sun.png" alt="dark mode" id="icon">
+      <img width="32px" src="./Publics/icons/sun.png" alt="dark mode" id="icon">
     </li>
   </ul>
 </nav>
@@ -25,10 +25,8 @@ header.innerHTML = `
 footer.innerHTML = `
 <div class="footer-container">
 <div class="footer-conteudo">
-
-</div> <!-- FIM FOOTER CONTEUDO -->
-
-<p class="footer-direitos">CubeElement © Todos os direitos reservados.</p>
+  <p class="cor-2">CubeElement © Todos os direitos reservados.</p>
+</div>
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
 

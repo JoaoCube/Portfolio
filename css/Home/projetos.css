@@ -69,6 +69,9 @@
 }
 
 @media (max-width: 800px) {
+  .projetos-container .setabaixo {
+    display: none;
+  }
   .projetos-bg {
     height: auto;
     margin-top: 500px;
