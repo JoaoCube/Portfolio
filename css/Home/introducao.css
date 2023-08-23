@@ -1,0 +1,135 @@
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.introducao-bg {
+  background-color: var(--cor-10);
+  height: 90vh;
+  overflow: hidden;
+}
+.introducao-container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTAINER DAS CARACTERISTICAS */
+.profile-conteudo {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TEXTOS A ESQUERDA NA INTRODUCAO */
+.info-profile {
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+.info-profile .btn-area {
+  margin: 0 auto;
+  max-width: 350px;
+}
+/* BOTAO DA INTRODUCAO */
+.btn-area button {
+  width: 140px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+/* ICONE DENTRO DO BOTAO */
+.btn-area button > i {
+  margin-right: 6px;
+}
+.info-profile .btn-area .btn-curriculo {
+  background: none;
+  border: 1px solid var(--cor-3);
+  transition: 0.4s ease-in-out;
+}
+.btn-area .btn-curriculo:hover {
+  background-color: var(--cor-7);
+  border: 1px solid var(--cor-3);
+}
+
+.info-profile .btn-area .btn-contato {
+  border: 1px solid var(--cor-10);
+  background-color: var(--cor-3);
+  transition: 0.4s ease-in-out;
+}
+.btn-area .btn-contato:hover {
+  background-color: var(--cor-hover);
+}
+
+.title::after {
+  content: "|";
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
+.info-profile .title::before {
+  content: "";
+  width: 100px;
+  height: 6px;
+  position: absolute;
+}
+
+/* CONTAINER DE ICONES */
+.icons-area {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 10px;
+}
+.icons-area a {
+  margin: 0px 10px;
+}
+
+.profile-imagem {
+  background-color: var(--cor-9);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.profile-imagem img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background-color: var(--cor-10);
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  .profile-conteudo {
+    height: 65vh;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .profile-imagem {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  .info-profile {
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+    position: relative;
+  }
+  .info-profile h3 {
+    font-size: 1.5rem;
+  }
+  .info-profile .title {
+    font-size: 2rem;
+  }
+}

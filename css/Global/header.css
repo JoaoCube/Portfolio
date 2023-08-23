@@ -1,0 +1,111 @@
+.header-bg {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.header-conteudo {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#menu .modes {
+  width: 32px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+#menu a {
+  display: block;
+  position: relative;
+  color: var(--cor-5);
+  font-size: 1.1rem;
+}
+
+#menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-9);
+  margin-top: 4px;
+  transition: width 0.3s ease;
+  position: absolute;
+}
+#menu a:hover:after {
+  width: 100%;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 160px;
+    top: 100px;
+    right: 20px;
+    background-color: var(--cor-10);
+    transition: 0.5s;
+    z-index: 100;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 620px);
+    color: var(--cor-2);
+    visibility: visible;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  #menu a {
+    padding: 10px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #menu .modes {
+    margin-left: 10px;
+  }
+  #btn-mobile {
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
