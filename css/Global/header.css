@@ -48,17 +48,17 @@
     display: block;
     position: absolute;
     width: 160px;
+    height: 0px;
     top: 100px;
     right: 20px;
     background-color: var(--cor-10);
     transition: 0.5s;
     z-index: 100;
-    height: auto;
     visibility: hidden;
     overflow-y: hidden;
   }
   #nav.active #menu {
-    height: auto;
+    height: 220px;
     color: var(--cor-2);
     padding: 20px;
     visibility: visible;
