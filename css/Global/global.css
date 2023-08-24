@@ -25,6 +25,9 @@ a {
   list-style: none;
   text-decoration: none;
 }
+a {
+  color: var(--cor-2);
+}
 
 body {
   justify-content: center;

@@ -3,7 +3,7 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 header.innerHTML = `
 <div class="header-conteudo">
-<a href="index.html" id="logo" class="cor-2 font2-bold-Pg">Logo</a>
+<a href="index.html" id="logo" class="cor-2 font2-bold-Pg">Cube</a>
 
 <nav id="nav">
   <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
