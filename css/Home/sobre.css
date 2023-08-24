@@ -38,6 +38,8 @@
 }
 .imagem-area img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .sobre-info {
   margin-top: 70px;
