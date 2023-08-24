@@ -1,5 +1,5 @@
 .contato-bg {
-  height: 80vh;
+  height: auto;
   overflow: hidden;
 }
 
@@ -42,29 +42,25 @@
   color: var(--cor-6);
   border-bottom: 1px solid var(--cor-6);
 }
+@media (max-width: 1200px) {
+  .contato-bg {
+    height: auto;
+  }
+  .contato-conteudo .card-contato {
+    margin: 20px auto;
+    width: 400px;
+    border-radius: 50px;
+    border: 1px solid var(--cor-8);
+  }
 
-.contato-conteudo .lista-contato {
-  margin-top: 350px;
-}
-.lista-contato ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.lista-contato ul a {
-  color: var(--cor-2);
-  font-size: 1.5rem;
-  border-bottom: 1px solid transparent;
-}
-.lista-contato ul a:hover {
-  color: var(--cor-8);
-  border-bottom: 1px solid var(--cor-8);
+  .contato-container .text-area {
+    padding-top: 200px;
+  }
 }
 
 @media (max-width: 800px) {
   .contato-bg {
-    height: 80vh;
+    height: auto;
   }
   .contato-conteudo .card-contato {
     margin: 20px;
@@ -80,12 +76,24 @@
   .contato-container .text-area {
     padding-top: 200px;
   }
-  .contato-conteudo .lista-contato {
-    margin-top: 300px;
+}
+
+@media (max-width: 500px) {
+  .contato-bg {
+    height: auto;
   }
-  .lista-contato ul a {
-    color: var(--cor-9);
-    font-size: 1rem;
-    border-bottom: 1px solid transparent;
+  .contato-conteudo .card-contato {
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    display: flex;
+    border-radius: 50px;
+    border: 1px solid var(--cor-8);
+  }
+  .item-contato p {
+    font-size: 0.7rem;
+  }
+  .contato-container .text-area {
+    padding-top: 200px;
   }
 }

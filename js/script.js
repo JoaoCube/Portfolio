@@ -21,6 +21,14 @@ header.innerHTML = `
 `;
 footer.innerHTML = `
 <div class="footer-container">
+<div class="lista-contato">
+<ul>
+  <li><a href="#sobre">About</a></li>
+  <li><a href="#experiencia">Experience</a></li>
+  <li><a href="#projetos">Projects</a></li>
+  <li><a href="#contato">Contact</a></li>
+</ul>
+</div>
 <div class="footer-conteudo">
   <p class="cor-2">CubeElement © Todos os direitos reservados.</p>
 </div>

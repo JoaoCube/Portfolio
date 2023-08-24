@@ -19,6 +19,24 @@
 .footer-conteudo p {
   padding: 40px;
 }
+.footer-container .lista-contato {
+  margin-top: 350px;
+}
+.lista-contato ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.lista-contato ul a {
+  color: var(--cor-2);
+  font-size: 1.5rem;
+  border-bottom: 1px solid transparent;
+}
+.lista-contato ul a:hover {
+  color: var(--cor-8);
+  border-bottom: 1px solid var(--cor-8);
+}
 
 @media (max-width: 800px) {
   .footer-bg {
@@ -28,5 +46,13 @@
 
   .footer-conteudo p {
     font-size: 0.9rem;
+  }
+  .footer-container .lista-contato {
+    margin-top: 300px;
+  }
+  .lista-contato ul a {
+    color: var(--cor-9);
+    font-size: 1rem;
+    border-bottom: 1px solid transparent;
   }
 }
