@@ -26,7 +26,13 @@
   align-items: center;
   gap: 10px;
   margin: auto;
+}
+.item-contato a {
   cursor: pointer;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item-contato p {
   border-bottom: 1px solid transparent;
