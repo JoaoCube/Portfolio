@@ -113,9 +113,7 @@
 }
 @media (max-width: 800px) {
   .experiencia-bg {
-    .experiencia-bg {
-      height: auto;
-    }
+    height: auto;
   }
   .experiencia-container .setabaixo {
     position: absolute;
@@ -151,7 +149,7 @@
     grid-template-columns: 1fr;
   }
   .xp-left ul li {
-    width: 180px;
+    width: 160px;
     display: flex;
     margin: 10px auto;
     justify-content: left;
@@ -163,28 +161,29 @@
   .xp-right .text-xp h3 {
     font-size: 1rem;
   }
+  .text-xp p {
+    flex-wrap: wrap;
+  }
   .xp-right ul {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
   }
   .xp-right ul li {
-    width: 180px;
+    width: 160px;
     justify-content: left;
     align-items: center;
     display: flex;
     margin: 10px auto;
   }
-  .dois .text-xp p {
+  .xp-right.dois p {
     font-size: 0.8rem;
   }
 }
 
 @media (max-width: 500px) {
   .experiencia-bg {
-    .experiencia-bg {
-      height: auto;
-    }
+    height: auto;
   }
   .experiencia-container .setabaixo {
     position: absolute;
@@ -192,15 +191,17 @@
     right: 20px;
     bottom: -50px;
   }
+  /* CONTAINER DOS CARDS */
   .experiencia-conteudo .xp-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  /* CARDS */
   .experiencia-conteudo .xp-left,
   .xp-right {
     overflow: hidden;
-    padding: 20px;
+    padding: 10px;
     width: auto;
     height: auto;
     border-radius: 30px;
@@ -209,6 +210,9 @@
   .xp-right h1 {
     text-align: center;
     margin-bottom: 10px;
+  }
+  .xp-right.dois {
+    display: none;
   }
   .xp-left h1 {
     text-align: center;
@@ -220,7 +224,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .xp-left ul li {
-    width: 160px;
+    width: 140px;
     display: flex;
     margin: 10px auto;
     justify-content: left;
@@ -231,14 +235,16 @@
   }
   .text-xp p {
     font-size: 0.8rem;
+    flex-wrap: wrap;
   }
   .xp-right ul {
     width: 100%;
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
   .xp-right ul li {
-    width: 160px;
+    width: 140px;
     display: flex;
     margin: 10px auto;
     justify-content: left;
