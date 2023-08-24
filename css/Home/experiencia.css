@@ -185,69 +185,25 @@
   .experiencia-bg {
     height: auto;
   }
-  .experiencia-container .setabaixo {
-    position: absolute;
-    z-index: 10;
-    right: 20px;
-    bottom: -50px;
-  }
-  /* CONTAINER DOS CARDS */
   .experiencia-conteudo .xp-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  /* CARDS */
-  .experiencia-conteudo .xp-left,
-  .xp-right {
-    overflow: hidden;
-    padding: 10px;
-    width: auto;
-    height: auto;
-    border-radius: 30px;
-    border: 1px solid var(--cor-8);
-  }
-  .xp-right h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .xp-right.dois {
-    display: none;
-  }
-  .xp-left h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .xp-left ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
   .xp-left ul li {
-    width: 140px;
-    display: flex;
+    width: 240px;
     margin: 10px auto;
-    justify-content: left;
-    align-items: center;
   }
+  .xp-right ul li {
+    width: 200px;
+    margin: 10px auto;
+  }
+
   .text-xp h3 {
     font-size: 1rem;
   }
   .text-xp p {
     font-size: 0.8rem;
     flex-wrap: wrap;
-  }
-  .xp-right ul {
-    width: 100%;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-  .xp-right ul li {
-    width: 140px;
-    display: flex;
-    margin: 10px auto;
-    justify-content: left;
-    align-items: center;
   }
 }
