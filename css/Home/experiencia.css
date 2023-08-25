@@ -71,7 +71,7 @@
 }
 .xp-right ul li {
   gap: 10px;
-  width: 220px;
+  width: auto;
   justify-content: left;
   align-items: center;
   display: flex;
@@ -190,13 +190,21 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .experiencia-conteudo .xp-left,
+  .xp-right {
+    overflow: hidden;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid var(--cor-8);
+  }
   .xp-left ul li {
-    width: 240px;
+    width: 170px;
     margin: 10px auto;
   }
   .xp-right ul li {
-    width: 200px;
-    margin: 10px auto;
+    width: 170px;
   }
 
   .text-xp h3 {
