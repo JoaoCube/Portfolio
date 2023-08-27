@@ -12,6 +12,8 @@
 }
 .sobre-container .setabaixo {
   position: absolute;
+  opacity: 0.7;
+  transform: rotate(-90deg);
   z-index: 10;
   right: 0px;
   bottom: -150px;
@@ -22,7 +24,6 @@
 }
 
 .sobre-conteudo {
-  /* background-color: var(--cor-9); */
   margin-top: 130px;
   gap: 20px;
   display: grid;
@@ -110,15 +111,10 @@
     font-size: 0.8rem;
   }
 }
-@media (max-width: 600px) {
-  .sobre-container .setabaixo {
-    display: none;
-  }
+@media (max-width: 800px) {
   .sobre-info {
-    padding: 10px 20px;
+    padding: 10px 25px;
     margin-top: 0px;
-    align-items: center;
-    justify-content: center;
   }
   .card-area {
     width: 100%;
@@ -127,12 +123,12 @@
     gap: 10px;
   }
   .card-area .card-item {
-    height: 100px;
+    height: auto;
     padding: 20px;
     flex-wrap: wrap;
     overflow: hidden;
   }
-  .card-item h3 {
+  .card-item h1 {
     font-size: 1rem;
   }
   .card-item p {
@@ -151,6 +147,10 @@
     height: 170px;
     display: block;
     margin: 0 auto;
+  }
+  .sobre-info {
+    padding: 10px 20px;
+    margin-top: 0px;
   }
   .card-area {
     width: 100%;

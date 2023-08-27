@@ -11,12 +11,6 @@
   max-width: 1600px;
   position: relative;
 }
-.projetos-container .setabaixo {
-  position: absolute;
-  z-index: 10;
-  right: 20px;
-  bottom: -80px;
-}
 
 .projetos-conteudo {
   max-width: 1600px;
@@ -125,28 +119,19 @@
   }
 }
 @media (max-width: 800px) {
-  .projetos-container .setabaixo {
-    display: none;
-  }
   .projetos-bg {
     height: auto;
-  }
-  .projetos-conteudo {
-    max-width: 1600px;
-    margin-top: 20px;
-    width: 100%;
   }
   .projetos-cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0px;
   }
   .projetos-cards .card-item {
     border-radius: 30px;
     margin: 0px 10px;
-    max-width: 340px;
+    width: auto;
     height: 400px;
     text-align: center;
   }
@@ -155,19 +140,6 @@
     border-radius: 20px;
     margin: 10px;
     width: auto;
-    height: 280px;
-  }
-}
-
-@media (max-width: 500px) {
-  .projetos-container .setabaixo {
-    display: none;
-  }
-  .projetos-bg {
-    height: auto;
-  }
-  .projetos-cards {
-    width: 100%;
-    gap: 20px;
+    height: 290px;
   }
 }

@@ -10,11 +10,11 @@ header.innerHTML = `
     <span id="hamburger"></span>
   </button>
 
-  <ul id="menu" role="menu">
-    <li><a href="#sobre">About</a></li>
-    <li><a href="#experiencia">Experience</a></li>
-    <li><a href="#projetos">Projects</a></li>
-    <li><a href="#contato">Contact</a></li>
+  <ul id="menu" role="list">
+    <li role="listitem"><a href="#sobre">About</a></li>
+    <li role="listitem"><a href="#experiencia">Experience</a></li>
+    <li role="listitem"><a href="#projetos">Projects</a></li>
+    <li role="listitem"><a href="#contato">Contact</a></li>
   </ul>
 </nav>
 </div>

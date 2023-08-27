@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta Content-Type: text/html; charset=UTF-8>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvedor Front End e UI/UX Designer Localizado no Amazonas">
   <link rel="stylesheet" href="./css/Global/style.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" type="image/png" href="./favicon.png" />
 
   <title>JoaoCube | Portfolio</title>
@@ -25,79 +24,91 @@
 
         <div class="profile-conteudo">
           <div class="profile-imagem">
-            <img src="./Publics/imgs/profile-img.svg" alt="profile">
+            <img src="./Publics/imgs/profile-img.svg" alt="profile" width="400px" height="400px">
           </div>
           <div class="info-profile typeWriter ">
-            <h3 class="cor-5 font1-bold-Pp">Hello, I'm</h3>
-            <h1 id="text" class="title font1-bold2-R">João Cube</h1>
-            <h3 class="cor-5 font1-normal2-R">Frontend Developer</h3>
+            <p class="cor-5 font1-bold-Pp">Hello, I'm</p>
+            <h1 class="title font1-bold2-R">João Cube</h1>
+            <p class="cor-5 font1-normal2-R">Frontend Developer</p>
 
             <div class="btn-area">
+
               <a href="./Publics/docs/Currículo 2023 - João Santos.pdf" download>
-                <button class="btn-curriculo cor-3 font1-normal-Rp"><i class="fa-solid fa-download" style="color: #161616;"></i>Curriculo</button>
+                <div class="botao1">
+                  <button class="btn-curriculo cor-3 font1-normal-Rp"><img src="./Publics/icons/download.svg" width="16px" height="16px" alt="download">Curriculo</button>
+                </div>
+
               </a>
+
               <a href="#contato">
-                <button class="btn-contato cor-7 font1-normal-Rp"><i class="fa-solid fa-at" style="color: #f9f9fc;"></i>Contate-me</button>
+                <div class="botao1">
+                  <button class="btn-contato cor-7 font1-normal-Rp">
+                    <img src="./Publics/icons/arroba.svg" class="arroba" width="16px" height="16px" alt="contato">Contate-me</button>
+                </div>
               </a>
             </div> <!-- FIM BUTTONS -->
+
+
             <div class="icons-area">
-              <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank">
-                <i class="fa-brands fa-linkedin fa-xl" style="color: #161616;"></i>
+              <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank" aria-label="Ir para o Meu perfil do linkedin">
+                <img src="./Publics/icons/linkedin.svg" alt="linkedin" width="26px" height="26px">
               </a>
-              <a href="https://github.com/JoaoCube" target="_blank">
-                <i class="fa-brands fa-github fa-xl" style="color: #161616;"></i>
+              <a href="https://github.com/JoaoCube" target="_blank" aria-label="Ir para o Meu perfil do github">
+                <img src="./Publics/icons/github.svg" alt="github" width="26px" height="26px">
               </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-twitter fa-xl" style="color: #161616;"></i>
+              <a href="#" target="_blank" aria-label="Ir para o Meu perfil do twitter">
+                <img src="./Publics/icons/twitter.svg" alt="twitter" width="26px" height="26px">
               </a>
             </div> <!-- FIM ICONS CONT -->
           </div> <!-- FIM INFO PROFILE -->
         </div> <!-- FIM PROFILE CONTEUDO -->
-
       </div> <!-- FIM SOBRE CONTAINER -->
     </section> <!-- FIM SOBRE BG -->
 
     <section class="sobre-bg" id="sobre">
       <article class="sobre-container">
         <div class="text-area">
-          <h3 class="cor-5 font1-bold-Pp">Conheça Mais</h3>
-          <h1 id="text" class="cor-3 font1-bold2-R">Sobre Mim</h1>
+          <p class="cor-5 font1-bold-Pp">Conheça Mais</p>
+          <h1 class="cor-3 font1-bold2-R">Sobre Mim</h1>
         </div>
 
         <div class="sobre-conteudo">
           <div class="imagem-area">
-            <img src="./Publics/imgs/profile2-img.svg" alt="profile 2">
+            <img src="./Publics/imgs/profile2-img.svg" alt="profile 2" width="400px" height="400px">
           </div>
 
           <div class="sobre-info container">
+
             <div class="card-area">
               <div class="card-item">
-                <i class="fa-solid fa-award fa-xl" style="color: #161616;"></i>
-                <h3 class="cor-2 font2-bold-Pm">Experiência</h3>
+                <img src="./Publics/icons/award.svg" width="20px" height="20px" alt="award">
+                <h1 class="cor-2 font2-bold-Pm">Experiência</h1>
                 <p class="cor-5 font1-normal2-Pp">2+ anos</p>
                 <p class="cor-5 font1-normal2-Pp">Frontend Development</p>
               </div>
               <div class="card-item">
-                <i class="fa-solid fa-user-group fa-xl" style="color: #161616;"></i>
-                <h3 class="cor-2 font2-bold-Pm">Educação</h3>
+                <img src="./Publics/icons/group.svg" width="20px" height="20px" alt="group">
+                <h1 class="cor-2 font2-bold-Pm">Educação</h1>
                 <p class="cor-5 font1-normal2-Pp">Ciência da Computação</p>
                 <p class="cor-5 font1-normal2-Pp">Bacharelado</p>
               </div>
             </div> <!-- FIM CARD AREA -->
+
             <div class="text-sobre">
               <p class="cor-3 font1-normal2-Pp">Olá, meu nome é João Victor, sou um desenvolvedor Front End, UI & UX Designer e moro em Manaus/AM📍. Comecei a programar por acaso quando pensei: "É muito difícil fazer um site?". Comecei a aprender no primeiro dia do ano de madrugada e desde então fiquei praticando, minha primeira oportunidade foi com landing pages.</p>
             </div>
           </div>
           <i class="fa-solid fa-angles-down fa-2xl setabaixo" style="color: #161616;"></i>
         </div> <!-- FIM SOBRE CONTEUDO -->
+        <img src="./Publics/icons/seta.svg" class="setabaixo" alt="seta" width="32px" height="32px">
       </article> <!-- FIM SOBRE CONTAINER -->
     </section> <!-- FIM SOBRE BG -->
 
     <section class="experiencia-bg" id="experiencia">
       <article class="experiencia-container">
         <div class="text-area">
-          <h3 class="cor-5 font1-bold-Pp">Saiba minhas</h3>
-          <h1 id="text" class="cor-3 font1-bold2-R">Experiências</h1>
+          <p class="cor-5 font1-bold-Pp">Saiba minhas</p>
+          <h1 class="cor-3 font1-bold2-R">Experiências</h1>
         </div>
 
         <div class="experiencia-conteudo">
@@ -109,10 +120,10 @@
               <ul>
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>HTML</h3>
+                    <h1>HTML</h1>
                     <p>Avançado</p>
                   </div>
 
@@ -120,10 +131,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>CSS</h3>
+                    <h1>CSS</h1>
                     <p>Avançado</p>
                   </div>
 
@@ -131,10 +142,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>JavaScript</h3>
+                    <h1>JavaScript</h1>
                     <p>Básico</p>
                   </div>
 
@@ -142,10 +153,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>TypeScript</h3>
+                    <h1>TypeScript</h1>
                     <p>Básico</p>
                   </div>
 
@@ -153,10 +164,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>UI e UX Design</h3>
+                    <h1>UI e UX Design</h1>
                     <p>Intermediário</p>
                   </div>
 
@@ -164,10 +175,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>SASS</h3>
+                    <h1>SASS</h1>
                     <p>Intermediário</p>
                   </div>
                 </li> <!-- SASS -->
@@ -181,10 +192,10 @@
               <ul>
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>Ciência da Computação</h3>
+                    <h1>Ciência da Computação</h1>
                     <p>Estacio - Bacharelado</p>
                   </div>
 
@@ -192,10 +203,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>Design Gráfico</h3>
+                    <h1>Design Gráfico</h1>
                     <p>Fundação Bradesco</p>
                   </div>
 
@@ -203,10 +214,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>Figma e Photoshop</h3>
+                    <h1>Figma e Photoshop</h1>
                     <p>Intermediário</p>
                   </div>
 
@@ -214,10 +225,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>Git e Github</h3>
+                    <h1>Git e Github</h1>
                     <p>Básico</p>
                   </div>
 
@@ -225,10 +236,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>NPM</h3>
+                    <h1>NPM</h1>
                     <p>Básico</p>
                   </div>
 
@@ -242,10 +253,10 @@
               <ul>
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>HTML e CSS</h3>
+                    <h1>HTML e CSS</h1>
                     <p>Origamid</p>
                   </div>
 
@@ -253,10 +264,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>CSS Flexbox</h3>
+                    <h1>CSS Flexbox</h1>
                     <p>Origamid</p>
                   </div>
 
@@ -264,10 +275,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>JavaScript</h3>
+                    <h1>JavaScript</h1>
                     <p>Curso em Video</p>
                   </div>
 
@@ -275,10 +286,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>CSS Grid</h3>
+                    <h1>CSS Grid</h1>
                     <p>Origamid</p>
                   </div>
 
@@ -286,10 +297,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>JavaScript</h3>
+                    <h1>JavaScript</h1>
                     <p>Origamid</p>
                   </div>
 
@@ -297,10 +308,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>UI UX Design</h3>
+                    <h1>UI UX Design</h1>
                     <p>Origamid</p>
                   </div>
                 </li> <!-- SASS -->
@@ -314,10 +325,10 @@
               <ul>
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/check.svg" alt="verificado">
+                    <img src="./Publics/icons/check.svg" alt="verificado" width="32px" height="32px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>Técnico</h3>
+                    <h1>Técnico</h1>
                     <p>Sou formado em mecânica aeronáutica no módulo de Grupo Motopropulsor (GMP).</p>
                   </div>
 
@@ -325,10 +336,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/check.svg" alt="verificado">
+                    <img src="./Publics/icons/check.svg" alt="verificado" width="32px" height="32px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>Parlamentar</h3>
+                    <h1>Lei</h1>
                     <p>Fui Jovem Parlamentar em 2017, pela Escola Professor Julio Cesar de Moraes Passos.</p>
                   </div>
 
@@ -336,20 +347,19 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/check.svg" alt="verificado">
+                    <img src="./Publics/icons/check.svg" alt="verificado" width="32px" height="32px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h3>Edição</h3>
+                    <h1>Edição</h1>
                     <p>Fui editor de imagem e também fiz motion design antes de começar a programar.</p>
                   </div>
 
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
-        <i class="fa-solid fa-angles-down fa-2xl setabaixo" style="color: #161616;"></i>
+        <img src="./Publics/icons/seta.svg" class="setabaixo" alt="seta" width="32px" height="32px">
 
       </article>
     </section>
@@ -357,8 +367,8 @@
     <section class="projetos-bg" id="projetos">
       <article class="projetos-container">
         <div class="text-area">
-          <h3 class="cor-5 font1-bold-Pp">Conheça Meus</h3>
-          <h1 id="text" class="cor-3 font1-bold2-R">Projetos</h1>
+          <p class="cor-5 font1-bold-Pp">Conheça Meus</p>
+          <h1 class="cor-3 font1-bold2-R">Projetos</h1>
         </div>
 
         <div class="projetos-conteudo">
@@ -414,15 +424,14 @@
 
           </div>
         </div>
-        <i class="fa-solid fa-angles-down fa-2xl setabaixo" style="color: #161616;"></i>
       </article> <!-- FIM SOBRE CONTAINER -->
     </section> <!-- FIM SOBRE BG -->
 
     <section class="contato-bg" id="contato">
       <article class="contato-container">
         <div class="text-area">
-          <h3 class="cor-5 font1-bold-Pp">Entrar em Contato</h3>
-          <h1 id="text" class="cor-3 font1-bold2-R">Fale Comigo</h1>
+          <p class="cor-5 font1-bold-Pp">Entrar em Contato</p>
+          <h1 class="cor-3 font1-bold2-R">Fale Comigo</h1>
         </div>
 
         <div class="contato-conteudo">

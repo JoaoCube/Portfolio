@@ -13,6 +13,8 @@
 }
 .experiencia-container .setabaixo {
   position: absolute;
+  opacity: 0.7;
+  transform: rotate(-90deg);
   z-index: 10;
   right: 20px;
   bottom: -150px;
@@ -25,7 +27,7 @@
 .experiencia-conteudo .xp-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 .experiencia-conteudo .xp-left,
 .xp-right {
@@ -38,9 +40,10 @@
 }
 
 /* ITEMS DA ESQUERDA */
-.xp-left h1 {
+.xp-left > h1 {
   text-align: center;
   margin-bottom: 20px;
+  border-bottom: 1px solid var(--cor-8);
 }
 .xp-left p {
   color: var(--cor-5);
@@ -51,18 +54,17 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .xp-left ul li {
-  width: 220px;
-  display: flex;
-  margin: 10px auto;
   gap: 10px;
-  justify-content: left;
-  align-items: center;
+  max-width: 220px;
+  display: flex;
+  margin: 10px;
 }
 
-/* ITEMS DA DIREITA */
-.xp-right h1 {
+/* ITEMS DA DIREITA - TITLE MAIN   */
+.xp-right > h1 {
   text-align: center;
   margin-bottom: 20px;
+  border-bottom: 1px solid var(--cor-8);
 }
 .xp-right ul {
   width: 100%;
@@ -70,12 +72,10 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .xp-right ul li {
+  max-width: 220px;
   gap: 10px;
-  width: auto;
-  justify-content: left;
-  align-items: center;
   display: flex;
-  margin: 10px auto;
+  margin: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -99,17 +99,6 @@
     width: auto;
     height: auto;
   }
-
-  .xp-left ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .xp-right ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media (max-width: 800px) {
   .experiencia-bg {
@@ -121,10 +110,15 @@
     right: 20px;
     bottom: -50px;
   }
+  .experiencia-conteudo {
+    margin: 40px auto;
+    padding: 20px;
+  }
+
   .experiencia-conteudo .xp-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
   }
   .experiencia-conteudo .xp-left,
   .xp-right {
@@ -135,49 +129,36 @@
     border-radius: 30px;
     border: 1px solid var(--cor-8);
   }
-  .xp-right h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .xp-left h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
   .xp-left ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
   }
   .xp-left ul li {
-    width: 160px;
     display: flex;
+    width: auto;
     margin: 10px auto;
-    justify-content: left;
-    align-items: center;
   }
-  .xp-left .text-xp h3 {
+  .xp-left .text-xp h1 {
     font-size: 1rem;
   }
-  .xp-right .text-xp h3 {
+  .xp-right .text-xp h1 {
     font-size: 1rem;
   }
   .text-xp p {
     flex-wrap: wrap;
   }
   .xp-right ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
   }
   .xp-right ul li {
-    width: 160px;
-    justify-content: left;
-    align-items: center;
-    display: flex;
     margin: 10px auto;
+    display: flex;
+    width: auto;
   }
-  .xp-right.dois p {
-    font-size: 0.8rem;
+  .xp-left .text-xp p {
+    font-size: 0.85rem;
+  }
+  .xp-right .text-xp p {
+    font-size: 0.85rem;
   }
 }
 
@@ -185,33 +166,32 @@
   .experiencia-bg {
     height: auto;
   }
+  .experiencia-container .text-area h1 {
+    font-size: 2.5rem;
+  }
+  .experiencia-conteudo {
+    margin: 40px auto;
+    padding: 10px;
+  }
   .experiencia-conteudo .xp-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .experiencia-conteudo .xp-left,
-  .xp-right {
-    overflow: hidden;
-    padding: 20px;
-    width: auto;
-    height: auto;
-    border-radius: 30px;
-    border: 1px solid var(--cor-8);
+  .xp-left ul {
+    display: block;
   }
   .xp-left ul li {
-    width: 170px;
-    margin: 10px auto;
+    display: flex;
+    width: auto;
+    margin: 20px auto;
+  }
+  .xp-right ul {
+    display: block;
   }
   .xp-right ul li {
-    width: 170px;
-  }
-
-  .text-xp h3 {
-    font-size: 1rem;
-  }
-  .text-xp p {
-    font-size: 0.8rem;
-    flex-wrap: wrap;
+    margin: 20px auto;
+    display: flex;
+    width: auto;
   }
 }
