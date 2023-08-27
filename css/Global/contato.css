@@ -2,7 +2,6 @@
   height: auto;
   overflow: hidden;
 }
-
 .contato-container {
   max-width: 1600px;
   margin-left: auto;
@@ -35,7 +34,7 @@
   align-items: center;
 }
 .item-contato p {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--cor-9);
   transition: 0.2s linear;
 }
 .card-contato .item-contato p:hover {
