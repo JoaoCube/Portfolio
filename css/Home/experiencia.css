@@ -1,42 +1,42 @@
 .experiencia-bg {
-  margin-left: auto;
-  margin-right: auto;
   height: 90vh;
   padding: 60px 0px;
+  background-color: var(--cor-12);
 }
 
 .experiencia-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  position: relative;
-}
-.experiencia-container .setabaixo {
-  position: absolute;
-  opacity: 0.7;
-  transform: rotate(-90deg);
-  z-index: 10;
-  right: 20px;
-  bottom: -150px;
 }
 .experiencia-conteudo {
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 1600px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .experiencia-conteudo .xp-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 600px;
+  height: auto;
   gap: 20px;
+  margin: 10px;
+  border: 4px solid var(--cor-3);
 }
 .experiencia-conteudo .xp-left,
 .xp-right {
   overflow: hidden;
-  padding: 40px;
+  padding: 20px;
   width: auto;
   height: auto;
-  border-radius: 30px;
-  border: 1px solid var(--cor-8);
+  background-color: var(--cor-10);
+}
+.xp-left ul li .icon {
+  display: flex;
+}
+.xp-right ul li .icon {
+  display: flex;
 }
 
 /* ITEMS DA ESQUERDA */
@@ -104,38 +104,33 @@
   .experiencia-bg {
     height: auto;
   }
-  .experiencia-container .setabaixo {
-    position: absolute;
-    z-index: 10;
-    right: 20px;
-    bottom: -50px;
-  }
   .experiencia-conteudo {
     margin: 40px auto;
     padding: 20px;
   }
-
   .experiencia-conteudo .xp-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .experiencia-conteudo .xp-left,
-  .xp-right {
-    overflow: hidden;
-    padding: 20px;
     width: auto;
     height: auto;
-    border-radius: 30px;
-    border: 1px solid var(--cor-8);
+    gap: 0px;
+    margin: 10px;
   }
   .xp-left ul {
-    display: block;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .xp-left ul li {
-    display: flex;
     width: auto;
-    margin: 10px auto;
+    margin: 6px;
+  }
+  .xp-right ul {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .xp-right ul li {
+    width: auto;
+    margin: 6px;
   }
   .xp-left .text-xp h1 {
     font-size: 1rem;
@@ -145,14 +140,6 @@
   }
   .text-xp p {
     flex-wrap: wrap;
-  }
-  .xp-right ul {
-    display: block;
-  }
-  .xp-right ul li {
-    margin: 10px auto;
-    display: flex;
-    width: auto;
   }
   .xp-left .text-xp p {
     font-size: 0.85rem;
@@ -172,26 +159,7 @@
   .experiencia-conteudo {
     margin: 40px auto;
     padding: 10px;
-  }
-  .experiencia-conteudo .xp-cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .xp-left ul {
-    display: block;
-  }
-  .xp-left ul li {
-    display: flex;
-    width: auto;
-    margin: 20px auto;
-  }
-  .xp-right ul {
-    display: block;
-  }
-  .xp-right ul li {
-    margin: 20px auto;
-    display: flex;
-    width: auto;
   }
 }

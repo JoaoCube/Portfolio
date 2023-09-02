@@ -28,18 +28,7 @@ a {
 a {
   color: var(--cor-2);
 }
-
 body {
   justify-content: center;
   align-items: center;
-}
-
-body::-webkit-scrollbar {
-  width: 8px; /* width of the entire scrollbar */
-}
-body::-webkit-scrollbar-track {
-  background: var(--cor-7); /* color of the tracking area */
-}
-body::-webkit-scrollbar-thumb {
-  background-color: var(--cor-9); /* color of the scroll thumb */
 }

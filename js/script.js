@@ -1,9 +1,15 @@
+let links = document.querySelectorAll("a");
+
+links.forEach(function (link) {
+  link.setAttribute("target", "_blank");
+});
+
 // repetir header e footer
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 header.innerHTML = `
 <div class="header-conteudo">
-<a href="index.html" id="logo" class="cor-2 font2-bold-Pg">Cube</a>
+<a href="index.html" id="logo" class="cor-3 font2-bold-Pg">Cube<span class="cor-3 font1-normal-Pp">.dev</span></a>
 
 <nav id="nav">
   <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
@@ -21,20 +27,49 @@ header.innerHTML = `
 `;
 footer.innerHTML = `
 <div class="footer-container">
-<div class="lista-contato">
-<ul>
-  <li><a href="#sobre">About</a></li>
-  <li><a href="#experiencia">Experience</a></li>
-  <li><a href="#projetos">Projects</a></li>
-  <li><a href="#contato">Contact</a></li>
-</ul>
+<div class="btn-top" onclick="scrollToTop()" id="scrollTopBtn">
+<p class="cor-10 font1-normal-Pp">Voltar ao Topo</p>
 </div>
 <div class="footer-conteudo">
-  <p class="cor-2">CubeElement © Todos os direitos reservados.</p>
+  <p class="cor-10">CubeElement © Todos os direitos reservados.</p>
 </div>
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
 
+// Função voltar ao topo
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+// VOLTAR AO TOPO
+window.addEventListener("scroll", function () {
+  var scrollTopBtn = document.getElementById("scrollTopBtn");
+  if (window.scrollY > 200) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+// Função para criar e baixar o currículo
+function downloadResume() {
+  const resumeUrl = "Publics/docs/CV_Joao_Santos.PDF";
+
+  // elemento de link para o download
+  const link = document.createElement("a");
+  link.href = resumeUrl;
+  link.target = "_blank";
+  link.download = "Curriculo 2023 - Joao Santos.pdf"; // Nome do arquivo
+
+  link.click();
+}
+// clique ao botão
+const downloadButton = document.getElementById("downloadButton");
+downloadButton.addEventListener("click", downloadResume);
+
+// MENU MOBILE HAMBURGER
 const btnMobile = document.getElementById("btn-mobile");
 function toggleMenu(event) {
   if (event.type === "touchstart") event.preventDefault();
@@ -61,3 +96,21 @@ function typeWriter(elemento) {
 }
 const titulo = document.querySelector("h1");
 typeWriter(titulo);
+
+// PUXA IMAGEM E TOOLTIP
+const imagem = document.getElementById("minha-imagem");
+const tooltip = document.getElementById("tooltip");
+
+// MOUSE SEGUIR MOUSEMOVE OU OVER
+imagem.addEventListener("mousemove", (event) => {
+  tooltip.textContent = "Curto estilo retrô";
+
+  // posição do tooltip
+  tooltip.style.left = `${event.clientX}px`;
+  tooltip.style.top = `${event.clientY}px`;
+  tooltip.style.display = "block";
+});
+// MOUSE SAI DO ELEMENTO
+imagem.addEventListener("mouseout", () => {
+  tooltip.style.display = "none";
+});

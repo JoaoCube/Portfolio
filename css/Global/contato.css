@@ -1,6 +1,8 @@
 .contato-bg {
+  padding: 170px 0px;
   height: auto;
   overflow: hidden;
+  background-color: var(--cor-10);
 }
 .contato-container {
   max-width: 1600px;
@@ -16,8 +18,8 @@
   padding: 30px 20px;
   width: 400px;
   display: flex;
-  border-radius: 50px;
-  border: 1px solid var(--cor-8);
+  border: 4px solid var(--cor-3);
+  box-shadow: 4px 4px 0px var(--cor-3);
 }
 .card-contato .item-contato {
   display: flex;
@@ -34,12 +36,12 @@
   align-items: center;
 }
 .item-contato p {
-  border-bottom: 1px solid var(--cor-9);
+  border-bottom: 1px solid var(--cor-13);
   transition: 0.2s linear;
 }
 .card-contato .item-contato p:hover {
-  color: var(--cor-6);
-  border-bottom: 1px solid var(--cor-6);
+  color: var(--cor-13);
+  border-bottom: 1px solid var(--cor-12);
 }
 @media (max-width: 1200px) {
   .contato-bg {
@@ -48,8 +50,6 @@
   .contato-conteudo .card-contato {
     margin: 20px auto;
     width: 400px;
-    border-radius: 50px;
-    border: 1px solid var(--cor-8);
   }
 
   .contato-container .text-area {
@@ -66,8 +66,6 @@
     padding: 20px;
     width: auto;
     display: flex;
-    border-radius: 50px;
-    border: 1px solid var(--cor-8);
   }
   .item-contato p {
     font-size: 0.7rem;
@@ -86,8 +84,6 @@
     padding: 20px;
     width: auto;
     display: flex;
-    border-radius: 50px;
-    border: 1px solid var(--cor-8);
   }
   .item-contato p {
     font-size: 0.7rem;

@@ -1,7 +1,6 @@
 .header-bg {
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--cor-10);
   padding: 40px;
 }
 .header-conteudo {
@@ -22,22 +21,15 @@
 #menu a {
   display: block;
   position: relative;
-  color: var(--cor-2);
   font-size: 1.1rem;
+  border: 1px solid var(--cor-3);
+  padding: 5px 10px;
+  box-shadow: 4px 4px 0px var(--cor-3);
+  transition: 0.3s ease-in-out;
+  background-color: var(--cor-10);
 }
-
-#menu a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0px;
-  background: var(--cor-9);
-  margin-top: 4px;
-  transition: width 0.3s ease;
-  position: absolute;
-}
-#menu a:hover:after {
-  width: 100%;
+#menu a:hover {
+  box-shadow: 0px 0px 0px var(--cor-3);
 }
 
 #btn-mobile {

@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvedor Front End e UI/UX Designer Localizado no Amazonas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/Global/style.css">
   <link rel="shortcut icon" type="image/png" href="./favicon.png" />
 
@@ -16,51 +19,50 @@
 <body>
 
   <main>
-    <header class=" header-bg" id="#header-bg">
-    </header>
+    <header class=" header-bg" id="#header-bg"></header>
 
     <section class="introducao-bg">
+
       <div class="introducao-container">
+        <div class="barra">
+        </div>
 
         <div class="profile-conteudo">
-          <div class="profile-imagem">
-            <img src="./Publics/imgs/profile-img.svg" alt="profile" width="400px" height="400px">
+          <div class="quadro1" id="minha-imagem">
+            <img src="./Publics/imgs/profile1.webp" alt="profile" width="400px" height="400px">
+            <div id="tooltip"></div>
           </div>
-          <div class="info-profile typeWriter ">
-            <p class="cor-5 font1-bold-Pp">Hello, I'm</p>
-            <h1 class="title font1-bold2-R">João Cube</h1>
-            <p class="cor-5 font1-normal2-R">Frontend Developer</p>
 
-            <div class="btn-area">
+          <div class="animer">
+            <div class="quadro2 typeWriter ">
+              <p class="cor-5 font1-bold-Pp">Hello, I'm</p>
+              <h1 class="title font1-bold2-R">João Cube</h1>
+              <p class="cor-5 font1-normal2-R">Frontend Developer</p>
 
-              <a href="./Publics/docs/Currículo 2023 - João Santos.pdf" download>
-                <div class="botao1">
+              <div class="btn-area">
+
+                <div class="botao1" id="downloadButton">
                   <button class="btn-curriculo cor-3 font1-normal-Rp"><img src="./Publics/icons/download.svg" width="16px" height="16px" alt="download">Curriculo</button>
                 </div>
 
-              </a>
+                <a href="#contato">
+                  <div class="botao1">
+                    <button class="btn-contato cor-10 font1-normal-Rp">
+                      <img src="./Publics/icons/arroba.svg" class="arroba" width="16px" height="16px" alt="contato">Contate-me</button>
+                  </div>
+                </a>
+              </div> <!-- FIM BUTTONS -->
+              <div class="icons-area">
+                <a href="https://www.linkedin.com/in/joao-batista-631120276/" aria-label="Ir para o Meu perfil do linkedin">
+                  <img src="./Publics/icons/linkedin.svg" alt="linkedin" width="26px" height="26px">
+                </a>
+                <a href="https://github.com/JoaoCube" aria-label="Ir para o Meu perfil do github">
+                  <img src="./Publics/icons/github.svg" alt="github" width="26px" height="26px">
+                </a>
+              </div> <!-- FIM ICONS CONT -->
+            </div> <!-- FIM INFO PROFILE -->
+          </div>
 
-              <a href="#contato">
-                <div class="botao1">
-                  <button class="btn-contato cor-7 font1-normal-Rp">
-                    <img src="./Publics/icons/arroba.svg" class="arroba" width="16px" height="16px" alt="contato">Contate-me</button>
-                </div>
-              </a>
-            </div> <!-- FIM BUTTONS -->
-
-
-            <div class="icons-area">
-              <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank" aria-label="Ir para o Meu perfil do linkedin">
-                <img src="./Publics/icons/linkedin.svg" alt="linkedin" width="26px" height="26px">
-              </a>
-              <a href="https://github.com/JoaoCube" target="_blank" aria-label="Ir para o Meu perfil do github">
-                <img src="./Publics/icons/github.svg" alt="github" width="26px" height="26px">
-              </a>
-              <a href="#" target="_blank" aria-label="Ir para o Meu perfil do twitter">
-                <img src="./Publics/icons/twitter.svg" alt="twitter" width="26px" height="26px">
-              </a>
-            </div> <!-- FIM ICONS CONT -->
-          </div> <!-- FIM INFO PROFILE -->
         </div> <!-- FIM PROFILE CONTEUDO -->
       </div> <!-- FIM SOBRE CONTAINER -->
     </section> <!-- FIM SOBRE BG -->
@@ -74,40 +76,47 @@
 
         <div class="sobre-conteudo">
           <div class="imagem-area">
-            <img src="./Publics/imgs/profile2-img.svg" alt="profile 2" width="400px" height="400px">
+            <img src="./Publics/imgs/profile2.webp" alt="profile2" width="600px" height="400px">
           </div>
 
           <div class="sobre-info container">
-
             <div class="card-area">
               <div class="card-item">
                 <img src="./Publics/icons/award.svg" width="20px" height="20px" alt="award">
                 <h1 class="cor-2 font2-bold-Pm">Experiência</h1>
-                <p class="cor-5 font1-normal2-Pp">2+ anos</p>
+                <p class="cor-5 font1-normal2-Pp">+1 ano</p>
                 <p class="cor-5 font1-normal2-Pp">Frontend Development</p>
               </div>
               <div class="card-item">
                 <img src="./Publics/icons/group.svg" width="20px" height="20px" alt="group">
                 <h1 class="cor-2 font2-bold-Pm">Educação</h1>
+                <p class="cor-5 font1-normal2-Pp">Graduação em</p>
                 <p class="cor-5 font1-normal2-Pp">Ciência da Computação</p>
-                <p class="cor-5 font1-normal2-Pp">Bacharelado</p>
               </div>
             </div> <!-- FIM CARD AREA -->
 
             <div class="text-sobre">
-              <p class="cor-3 font1-normal2-Pp">Olá, meu nome é João Victor, sou um desenvolvedor Front End, UI & UX Designer e moro em Manaus/AM📍. Comecei a programar por acaso quando pensei: "É muito difícil fazer um site?". Comecei a aprender no primeiro dia do ano de madrugada e desde então fiquei praticando, minha primeira oportunidade foi com landing pages.</p>
+              <p class="cor-3 font1-normal2-Pp">Olá, meu nome é João Victor, sou um desenvolvedor Front End, UI & UX Designer e moro em Manaus/AM📍. Comecei a programar por acaso quando pensei: "É muito difícil fazer um site?". E desde então fiquei praticando.</p>
+            </div>
+            <div class="skills">
+              <img src="./Publics/icons/html5.svg" alt="HTML" width="36px" height="36px">
+              <img src="./Publics/icons/css3-alt.svg" alt="CSS" width="36px" height="36px">
+              <img src="./Publics/icons/js.svg" alt="JAVASCRIPT" width="36px" height="36px">
+              <img src="./Publics/icons/bootstrap.svg" alt="BOOTSTRAP" width="36px" height="36px">
+              <img src="./Publics/icons/sass.svg" alt="SASS" width="36px" height="36px">
+              <img src="./Publics/icons/question.svg" alt="PROXIMA" width="36px" height="36px">
+              <img src="./Publics/icons/question.svg" alt="PROXIMA" width="36px" height="36px">
+              <img src="./Publics/icons/question.svg" alt="PROXIMA" width="36px" height="36px">
             </div>
           </div>
-          <i class="fa-solid fa-angles-down fa-2xl setabaixo" style="color: #161616;"></i>
         </div> <!-- FIM SOBRE CONTEUDO -->
-        <img src="./Publics/icons/seta.svg" class="setabaixo" alt="seta" width="32px" height="32px">
       </article> <!-- FIM SOBRE CONTAINER -->
     </section> <!-- FIM SOBRE BG -->
 
     <section class="experiencia-bg" id="experiencia">
       <article class="experiencia-container">
         <div class="text-area">
-          <p class="cor-5 font1-bold-Pp">Saiba minhas</p>
+          <p class="cor-10 font1-bold-Pp">Saiba minhas</p>
           <h1 class="cor-3 font1-bold2-R">Experiências</h1>
         </div>
 
@@ -120,7 +129,7 @@
               <ul>
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                    <img src="./Publics/icons/html5.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
                     <h1>HTML</h1>
@@ -131,7 +140,7 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                    <img src="./Publics/icons/css3-alt.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
                     <h1>CSS</h1>
@@ -142,7 +151,7 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                    <img src="./Publics/icons/js.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
                     <h1>JavaScript</h1>
@@ -164,10 +173,10 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                    <img src="./Publics/icons/bootstrap.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h1>UI e UX Design</h1>
+                    <h1>Bootstrap</h1>
                     <p>Intermediário</p>
                   </div>
 
@@ -175,75 +184,13 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                    <img src="./Publics/icons/sass.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
                     <h1>SASS</h1>
                     <p>Intermediário</p>
                   </div>
                 </li> <!-- SASS -->
-
-              </ul>
-            </div>
-
-            <div class="xp-right educacao">
-              <h1 class="cor-2">Educação & Habilidades</h1>
-
-              <ul>
-                <li>
-                  <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
-                  </div>
-                  <div class="text-xp font1-normal3-Pp">
-                    <h1>Ciência da Computação</h1>
-                    <p>Estacio - Bacharelado</p>
-                  </div>
-
-                </li> <!-- FACULDADE -->
-
-                <li>
-                  <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
-                  </div>
-                  <div class="text-xp font1-normal3-Pp">
-                    <h1>Design Gráfico</h1>
-                    <p>Fundação Bradesco</p>
-                  </div>
-
-                </li> <!-- DESIGN -->
-
-                <li>
-                  <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
-                  </div>
-                  <div class="text-xp font1-normal3-Pp">
-                    <h1>Figma e Photoshop</h1>
-                    <p>Intermediário</p>
-                  </div>
-
-                </li> <!-- FIGMA -->
-
-                <li>
-                  <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
-                  </div>
-                  <div class="text-xp font1-normal3-Pp">
-                    <h1>Git e Github</h1>
-                    <p>Básico</p>
-                  </div>
-
-                </li> <!-- GIT GITHUB -->
-
-                <li>
-                  <div class="icon">
-                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
-                  </div>
-                  <div class="text-xp font1-normal3-Pp">
-                    <h1>NPM</h1>
-                    <p>Básico</p>
-                  </div>
-
-                </li> <!-- NPM -->
 
               </ul>
             </div>
@@ -318,17 +265,80 @@
 
               </ul>
             </div>
+          </div>
 
+          <div class="xp-cards">
+            <div class="xp-right educacao">
+              <h1 class="cor-2">Educação & Habilidades</h1>
+
+              <ul>
+                <li>
+                  <div class="icon">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                  </div>
+                  <div class="text-xp font1-normal3-Pp">
+                    <h1>Ciência da Computação</h1>
+                    <p>Estacio - Bacharelado</p>
+                  </div>
+
+                </li> <!-- FACULDADE -->
+
+                <li>
+                  <div class="icon">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                  </div>
+                  <div class="text-xp font1-normal3-Pp">
+                    <h1>Design Gráfico</h1>
+                    <p>Fundação Bradesco</p>
+                  </div>
+
+                </li> <!-- DESIGN -->
+
+                <li>
+                  <div class="icon">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                  </div>
+                  <div class="text-xp font1-normal3-Pp">
+                    <h1>Figma e Photoshop</h1>
+                    <p>Intermediário</p>
+                  </div>
+
+                </li> <!-- FIGMA -->
+
+                <li>
+                  <div class="icon">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                  </div>
+                  <div class="text-xp font1-normal3-Pp">
+                    <h1>Git e Github</h1>
+                    <p>Básico</p>
+                  </div>
+
+                </li> <!-- GIT GITHUB -->
+
+                <li>
+                  <div class="icon">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
+                  </div>
+                  <div class="text-xp font1-normal3-Pp">
+                    <h1>NPM</h1>
+                    <p>Básico</p>
+                  </div>
+
+                </li> <!-- NPM -->
+
+              </ul>
+            </div>
             <div class="xp-right dois">
               <h1 class="cor-2">Curiosidades</h1>
 
               <ul>
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/check.svg" alt="verificado" width="32px" height="32px">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
-                    <h1>Técnico</h1>
+                    <h1>Avião</h1>
                     <p>Sou formado em mecânica aeronáutica no módulo de Grupo Motopropulsor (GMP).</p>
                   </div>
 
@@ -336,7 +346,7 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/check.svg" alt="verificado" width="32px" height="32px">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
                     <h1>Lei</h1>
@@ -347,7 +357,7 @@
 
                 <li>
                   <div class="icon">
-                    <img src="./Publics/icons/check.svg" alt="verificado" width="32px" height="32px">
+                    <img src="./Publics/icons/verificado.svg" alt="verificado" width="20px" height="20px">
                   </div>
                   <div class="text-xp font1-normal3-Pp">
                     <h1>Edição</h1>
@@ -359,7 +369,6 @@
             </div>
           </div>
         </div>
-        <img src="./Publics/icons/seta.svg" class="setabaixo" alt="seta" width="32px" height="32px">
 
       </article>
     </section>
@@ -376,58 +385,55 @@
 
             <div class="card-item">
               <div class="area-imagem">
-                <img src="./Publics/imgs/site-cubeanimes2.png" alt="cubeanimes" id="projeto1">
+                <img src="./Publics/imgs/projeto1.png" alt="cubeanimes">
               </div>
               <div class="area-text">
                 <h1 class="cor-2 font2-bold-Pm">CubeAnimes</h1>
               </div>
-
               <div class="area-button">
-                <button class="font1-normal2-Pp"><a class="cor-2" href="https://github.com/JoaoCube/Cubeanimes" target="_blank">Github</a>
+                <button class="font1-normal2-Pp"><a class="cor-2" href="https://github.com/JoaoCube/Cubeanimes">Github</a>
                 </button>
-                <button class="font1-normal2-Pp"><a class="cor-2" href="https://joaocube.github.io/Cubeanimes/" target="_blank">Preview</a></button>
+                <button class="font1-normal2-Pp preview"><a class="cor-10" href="https://joaocube.github.io/Cubeanimes/">Preview</a></button>
               </div>
 
             </div>
 
             <div class="card-item">
               <div class="area-imagem">
-                <img src="./Publics/imgs/site-IMC.png" alt="cubeanimes">
+                <img src="./Publics/imgs/projeto2.png" alt="cubeanimes">
               </div>
               <div class="area-text">
                 <h1 class="cor-2 font2-bold-Pm">Calculadora IMC</h1>
               </div>
-
               <div class="area-button">
-                <button class="font1-normal2-Pp"><a class="cor-2" href="https://github.com/JoaoCube/CalculadoraIMC" target="_blank">Github</a>
+                <button class="font1-normal2-Pp"><a class="cor-2" href="https://github.com/JoaoCube/CalculadoraIMC">Github</a>
                 </button>
-                <button class="font1-normal2-Pp"><a class="cor-2" href="https://joaocube.github.io/CalculadoraIMC/" target="_blank">Preview</a></button>
+                <button class="font1-normal2-Pp preview"><a class="cor-10" href="https://joaocube.github.io/CalculadoraIMC/">Preview</a></button>
               </div>
 
             </div>
 
             <div class="card-item">
               <div class="area-imagem">
-                <img src="./Publics/imgs/site-bikcraft.png" alt="bikcarft" id="projeto3">
+                <img src="./Publics/imgs/projeto3.png" alt="bikcarft">
               </div>
               <div class="area-text">
                 <h1 class="cor-2 font2-bold-Pm">Bikcraft</h1>
               </div>
-
               <div class="area-button">
-                <button class="font1-normal2-Pp"><a class="cor-2" href="https://github.com/JoaoCube/-joaocube.github.io" target="_blank">Github</a>
+                <button class="font1-normal2-Pp"><a class="cor-2" href="https://github.com/JoaoCube/-joaocube.github.io">Github</a>
                 </button>
-                <button class="font1-normal2-Pp"><a class="cor-2" href="https://joaocube.github.io/-joaocube.github.io/" target="_blank">Preview</a></button>
+                <button class="font1-normal2-Pp preview"><a class="cor-10" href="https://joaocube.github.io/-joaocube.github.io/">Preview</a></button>
               </div>
 
             </div>
-
           </div>
         </div>
+        <p class="cor-3 font1-bold-Pp">Ver Mais? Acesse meus Repositórios</p>
       </article> <!-- FIM SOBRE CONTAINER -->
     </section> <!-- FIM SOBRE BG -->
 
-    <section class="contato-bg" id="contato">
+    <section class="contato-bg">
       <article class="contato-container">
         <div class="text-area">
           <p class="cor-5 font1-bold-Pp">Entrar em Contato</p>
@@ -445,7 +451,7 @@
             </div>
 
             <div class="item-contato">
-              <a href="https://www.linkedin.com/in/joao-batista-631120276/" target="_blank">
+              <a href="https://www.linkedin.com/in/joao-batista-631120276/">
                 <img src="./Publics/icons/linkedin.svg" alt="linkedin" width="20px" height="20px">
                 <p class="cor-2 font1-normal-Pp">Linkedin</p>
               </a>
@@ -455,11 +461,10 @@
       </article> <!-- FIM SOBRE CONTAINER -->
     </section> <!-- FIM SOBRE BG -->
 
-    <footer class="footer-bg"></footer>
+    <footer class="footer-bg" id="contato"></footer>
   </main>
 
   <script src="./js/script.js"></script>
-
 </body>
 
 </html>

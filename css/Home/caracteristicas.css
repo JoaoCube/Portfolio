@@ -1,3 +1,18 @@
-body {
-  text-decoration: none;
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--cor-10); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--cor-3); /* color of the scroll thumb */
+}
+
+#tooltipSkill {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }

@@ -1,6 +1,7 @@
 .footer-bg {
   width: 100%;
-  /* background-color: var(--cor-7); */
+  height: auto;
+  background-color: var(--cor-11);
 }
 
 .footer-container {
@@ -19,23 +20,18 @@
 .footer-conteudo p {
   padding: 40px;
 }
-.footer-container .lista-contato {
-  margin-top: 350px;
+.footer-container .btn-top {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
 }
-.lista-contato ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.btn-top p {
+  cursor: pointer;
+  border-bottom: 1px solid var(--cor-10);
 }
-.lista-contato ul a {
-  color: var(--cor-2);
-  font-size: 1.5rem;
-  border-bottom: 1px solid transparent;
-}
-.lista-contato ul a:hover {
-  color: var(--cor-8);
-  border-bottom: 1px solid var(--cor-8);
+.footer-container .btn-top p:hover {
+  border-bottom: 1px solid var(--cor-3);
 }
 
 @media (max-width: 800px) {
@@ -51,8 +47,6 @@
     margin-top: 300px;
   }
   .lista-contato ul a {
-    color: var(--cor-9);
     font-size: 1rem;
-    border-bottom: 1px solid transparent;
   }
 }
