@@ -4,7 +4,7 @@ links.forEach(function (link) {
   link.setAttribute("target", "_blank");
 });
 
-// repetir header e footer
+// repetir header e footer caso faca novas paginas
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 header.innerHTML = `
