@@ -136,7 +136,7 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
-    height: 86vh;
+    height: auto;
     overflow: hidden;
   }
   .introducao-container {
@@ -176,6 +176,10 @@
 }
 
 @media (max-width: 500px) {
+  .introducao-bg {
+    height: auto;
+    overflow: hidden;
+  }
   .introducao-container {
     height: auto;
     margin: 30px 10px;
