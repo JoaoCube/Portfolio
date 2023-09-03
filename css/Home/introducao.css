@@ -177,7 +177,7 @@
 
 @media (max-width: 500px) {
   .introducao-bg {
-    height: auto;
+    height: 90vh;
     overflow: hidden;
   }
   .introducao-container {
