@@ -216,7 +216,7 @@
   }
   .profile-conteudo {
     gap: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .quadro1 {
     width: 270px;
@@ -225,5 +225,8 @@
   .quadro1 img {
     width: 270px;
     height: auto;
+  }
+  .quadro2 h1 {
+    line-height: 0.9;
   }
 }

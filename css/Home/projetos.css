@@ -71,7 +71,7 @@
   box-shadow: 0px 0px 0px var(--cor-3);
 }
 .area-button .preview {
-  background-color: var(--cor-11);
+  background-color: var(--cor-13);
 }
 
 @media (max-width: 1200px) {

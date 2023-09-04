@@ -42,8 +42,8 @@
   transition: 0.2s linear;
 }
 .card-contato .item-contato p:hover {
-  color: var(--cor-13);
-  border-bottom: 1px solid var(--cor-11);
+  color: var(--cor-3);
+  border-bottom: 1px solid var(--cor-13);
 }
 @media (max-width: 1200px) {
   .contato-conteudo .card-contato {
