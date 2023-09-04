@@ -105,8 +105,8 @@
     height: auto;
   }
   .experiencia-conteudo {
-    margin: 40px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 0px;
   }
   .experiencia-conteudo .xp-cards {
     width: auto;
@@ -151,14 +151,15 @@
 
 @media (max-width: 500px) {
   .experiencia-bg {
+    padding: 30px 0px;
     height: auto;
   }
   .experiencia-container .text-area h1 {
     font-size: 2rem;
   }
   .experiencia-conteudo {
-    margin: 40px auto;
-    padding: 10px;
+    margin: 20px auto;
+    padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
   }
