@@ -218,4 +218,12 @@
     gap: 20px;
     padding-top: 30px;
   }
+  .quadro1 {
+    width: 270px;
+    height: 240px;
+  }
+  .quadro1 img {
+    width: 270px;
+    height: auto;
+  }
 }
