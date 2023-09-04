@@ -95,3 +95,9 @@
     top: -7px;
   }
 }
+
+@media (max-width: 400px) {
+  .header-bg {
+    padding: 20px 40px;
+  }
+}
