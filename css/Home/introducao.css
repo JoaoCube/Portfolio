@@ -203,3 +203,19 @@
     width: auto;
   }
 }
+
+@media (max-width: 400px) {
+  .introducao-bg {
+    height: auto;
+    overflow: hidden;
+  }
+  .introducao-container {
+    height: auto;
+    margin: 20px 10px;
+    padding-bottom: 30px;
+  }
+  .profile-conteudo {
+    gap: 20px;
+    padding-top: 30px;
+  }
+}
