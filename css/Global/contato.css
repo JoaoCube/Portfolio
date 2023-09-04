@@ -1,5 +1,5 @@
 .contato-bg {
-  padding: 170px 0px;
+  padding: 200px 0px;
   height: auto;
   overflow: hidden;
   background-color: var(--cor-10);
@@ -8,16 +8,18 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--cor-6);
+  border: 4px solid var(--cor-3);
+  box-shadow: 4px 4px 0px var(--cor-3);
+  padding: 20px 0px;
 }
-.contato-container .text-area {
-  padding-top: 100px;
-}
-
+/* RETANGULO BRANCO OCM 2 ITENS */
 .contato-conteudo .card-contato {
-  margin: 40px auto;
-  padding: 30px 20px;
+  margin: 20px auto;
+  padding: 40px 20px;
   width: 400px;
   display: flex;
+  background-color: var(--cor-10);
   border: 4px solid var(--cor-3);
   box-shadow: 4px 4px 0px var(--cor-3);
 }
@@ -36,59 +38,60 @@
   align-items: center;
 }
 .item-contato p {
-  border-bottom: 1px solid var(--cor-13);
+  border-bottom: 1px solid var(--cor-12);
   transition: 0.2s linear;
 }
 .card-contato .item-contato p:hover {
   color: var(--cor-13);
-  border-bottom: 1px solid var(--cor-12);
+  border-bottom: 1px solid var(--cor-11);
 }
 @media (max-width: 1200px) {
-  .contato-bg {
-    height: auto;
-  }
   .contato-conteudo .card-contato {
-    margin: 20px auto;
     width: 400px;
-  }
-
-  .contato-container .text-area {
-    padding-top: 200px;
   }
 }
 
 @media (max-width: 800px) {
   .contato-bg {
+    padding: 200px 0px;
+  }
+  .contato-container {
     height: auto;
+    margin: 0px 20px;
+    padding: 20px 0px;
+    background-color: var(--cor-6);
   }
   .contato-conteudo .card-contato {
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 40px;
+    padding: 40px 20px;
     width: auto;
-    display: flex;
   }
   .item-contato p {
     font-size: 0.7rem;
-  }
-  .contato-container .text-area {
-    padding-top: 200px;
   }
 }
 
 @media (max-width: 500px) {
   .contato-bg {
-    height: auto;
+    padding: 150px 0px;
   }
   .contato-conteudo .card-contato {
     margin: 20px;
     padding: 20px;
     width: auto;
-    display: flex;
+  }
+  .text-area h1 {
+    font-size: 2rem;
   }
   .item-contato p {
     font-size: 0.7rem;
   }
-  .contato-container .text-area {
-    padding-top: 200px;
+  .item-contato a {
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
