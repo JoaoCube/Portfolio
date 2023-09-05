@@ -1,5 +1,9 @@
-let links = document.querySelectorAll("a");
+// cache ativa e desativa
+history.navigationMode = "compatible";
+history.navigationMode = "force-unique";
 
+// TODOS OS LINKS ABREM EM OUTRA ABA
+let links = document.querySelectorAll("a");
 links.forEach(function (link) {
   link.setAttribute("target", "_blank");
 });
@@ -83,7 +87,7 @@ function toggleMenu(event) {
     event.currentTarget.setAttribute("aria-label", "Abrir Menu");
   }
 }
-btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("click", toggleMenu, { passive: true });
 btnMobile.addEventListener("touchstart", toggleMenu);
 
 // ANIMACAO DE ESCREVER NA INTRODUCAO
