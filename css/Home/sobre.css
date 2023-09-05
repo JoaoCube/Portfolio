@@ -55,9 +55,6 @@
   height: 100px;
   margin-bottom: 20px;
 }
-.card-area .card-item > i {
-  margin-bottom: 20px;
-}
 .textsobre {
   flex-direction: column;
 }
