@@ -118,3 +118,30 @@ imagem.addEventListener("mousemove", (event) => {
 imagem.addEventListener("mouseout", () => {
   tooltip.style.display = "none";
 });
+
+//ANIMACAO DE IR APARECENDO OS ITENS
+// MOVE DA ESQUERDA PRA DIREITA
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+const elements = document.querySelectorAll(".hidden");
+elements.forEach((element) => myObserver.observe(element));
+
+// MOVE DE BAIXO PRA CIMA
+const myObserver2 = new IntersectionObserver((entries2) => {
+  entries2.forEach((entry2) => {
+    if (entry2.isIntersecting) {
+      entry2.target.classList.add("show2");
+    } else {
+      entry2.target.classList.remove("show2");
+    }
+  });
+});
+const elements2 = document.querySelectorAll(".hidden2");
+elements2.forEach((element) => myObserver2.observe(element));

@@ -16,3 +16,32 @@ body::-webkit-scrollbar-thumb {
   padding: 5px;
   border-radius: 5px;
 }
+/* COMECA NA ESQUERDA */
+.hidden {
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+/* VAI PRO LOCAL INICIAL */
+.show {
+  filter: blur(0px);
+  transition: all 1s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* COMECA DE BAIXO */
+.hidden2 {
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateY(50%);
+  opacity: 0;
+}
+/* VAI PRA CIMA */
+.show2 {
+  filter: blur(0px);
+  transition: all 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
