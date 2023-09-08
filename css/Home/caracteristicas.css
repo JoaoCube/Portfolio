@@ -33,14 +33,12 @@ body::-webkit-scrollbar-thumb {
 
 /* COMECA DE BAIXO */
 .hidden2 {
-  filter: blur(15px);
   transition: all 1s;
   transform: translateY(50%);
   opacity: 0;
 }
 /* VAI PRA CIMA */
 .show2 {
-  filter: blur(0px);
   transition: all 1s;
   transform: translateY(0);
   opacity: 1;
