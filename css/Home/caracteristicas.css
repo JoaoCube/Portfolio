@@ -43,3 +43,18 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(0);
   opacity: 1;
 }
+
+@media (max-width: 500px) {
+  /* COMECA DE BAIXO */
+  .animated_top {
+    transition: all 1s;
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  /* VAI PRA CIMA */
+  .show_top {
+    transition: all 1s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

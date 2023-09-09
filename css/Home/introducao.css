@@ -90,6 +90,9 @@
 /* SO ESTILO BOTAO DA INTRODUCAO */
 .btn-area button {
   width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
   box-shadow: 4px 4px 0px var(--cor-3);
   cursor: pointer;
@@ -101,7 +104,7 @@
   box-shadow: 0px 0px 0px var(--cor-3);
 }
 .btn-area button img {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 /* CONTAINER DE ICONES */
 .quadro2 .icons-area {
