@@ -1,9 +1,5 @@
-// cache ativa e desativa
-history.navigationMode = "compatible";
-history.navigationMode = "force-unique";
-
 // TODOS OS LINKS ABREM EM OUTRA ABA
-let links = document.querySelectorAll("a");
+let links = document.querySelectorAll(".link");
 links.forEach(function (link) {
   link.setAttribute("target", "_blank");
 });
@@ -88,7 +84,7 @@ function toggleMenu(event) {
   }
 }
 btnMobile.addEventListener("click", toggleMenu, { passive: true });
-btnMobile.addEventListener("touchstart", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu, { passive: true });
 
 // ANIMACAO DE ESCREVER NA INTRODUCAO
 function typeWriter(elemento) {
