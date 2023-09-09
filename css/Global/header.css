@@ -2,6 +2,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 40px;
+  background-color: var(--cor-10);
 }
 .header-conteudo {
   margin: 0 auto;

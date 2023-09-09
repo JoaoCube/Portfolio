@@ -27,8 +27,19 @@
 }
 .introducao-container .barra {
   height: 100px;
-  background-color: var(--cor-6);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 15px;
+  background: linear-gradient(to right, var(--cor-11), var(--cor-12));
   border-bottom: 4px solid var(--cor-3);
+}
+.barra .ball {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--cor-4);
 }
 /* CONTAINER DE TUDO */
 .profile-conteudo {
@@ -44,7 +55,7 @@
   height: 400px;
   overflow: hidden;
   box-shadow: 4px 4px 0px var(--cor-3);
-  background-color: var(--cor-6);
+  background-color: var(--cor-12);
   border: 4px solid var(--cor-3);
 }
 .quadro1 img {
@@ -82,32 +93,15 @@
   padding: 15px;
   box-shadow: 4px 4px 0px var(--cor-3);
   cursor: pointer;
+  background-color: var(--cor-10);
   transition: 0.3s ease-in-out;
+  border: 1px solid var(--cor-3);
 }
 .btn-area button:hover {
   box-shadow: 0px 0px 0px var(--cor-3);
 }
 .btn-area button img {
   margin-right: 6px;
-}
-.btn-area .arroba {
-  filter: invert();
-}
-.btn-area .btn-curriculo {
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--cor-3);
-  transition: 0.4s ease-in-out;
-}
-.btn-area .btn-contato {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--cor-10);
-  background-color: var(--cor-12);
-  transition: 0.4s ease-in-out;
 }
 /* CONTAINER DE ICONES */
 .quadro2 .icons-area {
@@ -147,6 +141,13 @@
   }
   .introducao-container .barra {
     height: 40px;
+    gap: 10px;
+  }
+  .barra .ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--cor-4);
   }
   .profile-conteudo {
     display: grid;

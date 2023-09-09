@@ -96,7 +96,7 @@ const titulo = document.querySelector("h1");
 typeWriter(titulo);
 
 // PUXA IMAGEM E TOOLTIP
-const imagem = document.getElementById("minha-imagem");
+const imagem = document.getElementById("main-image");
 const tooltip = document.getElementById("tooltip");
 
 // MOUSE SEGUIR MOUSEMOVE OU OVER
