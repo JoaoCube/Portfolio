@@ -36,14 +36,13 @@ footer.innerHTML = `
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
 
-// Função voltar ao topo
+// VOLTAR AO TOPO
 function scrollToTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
-// VOLTAR AO TOPO
 window.addEventListener("scroll", function () {
   var scrollTopBtn = document.getElementById("scrollTopBtn");
   if (window.scrollY > 200) {
@@ -53,9 +52,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Função para criar e baixar o currículo
+// BAIXAR CURRICULO
 function downloadResume() {
-  const resumeUrl = "Publics/docs/CV_Joao_Santos.PDF";
+  const resumeUrl = "Assets/docs/CV_Joao_Santos.PDF";
 
   // elemento de link para o download
   const link = document.createElement("a");
@@ -65,7 +64,6 @@ function downloadResume() {
 
   link.click();
 }
-// clique ao botão
 const downloadButton = document.getElementById("downloadButton");
 downloadButton.addEventListener("click", downloadResume);
 
@@ -91,7 +89,7 @@ function typeWriter(elemento) {
   const textoArray = elemento.innerHTML.split("");
   elemento.innerHTML = "";
   textoArray.forEach((letra, i) => {
-    setTimeout(() => (elemento.innerHTML += letra), 135 * i);
+    setTimeout(() => (elemento.innerHTML += letra), 100 * i);
   });
 }
 const titulo = document.querySelector("h1");
@@ -120,24 +118,24 @@ imagem.addEventListener("mouseout", () => {
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+      entry.target.classList.add("show_left");
     } else {
-      entry.target.classList.remove("show");
+      entry.target.classList.remove("show_left");
     }
   });
 });
-const elements = document.querySelectorAll(".hidden");
+const elements = document.querySelectorAll(".animated_left");
 elements.forEach((element) => myObserver.observe(element));
 
 // MOVE DE BAIXO PRA CIMA
 const myObserver2 = new IntersectionObserver((entries2) => {
   entries2.forEach((entry2) => {
     if (entry2.isIntersecting) {
-      entry2.target.classList.add("show2");
+      entry2.target.classList.add("show_top");
     } else {
-      entry2.target.classList.remove("show2");
+      entry2.target.classList.remove("show_top");
     }
   });
 });
-const elements2 = document.querySelectorAll(".hidden2");
+const elements2 = document.querySelectorAll(".animated_top");
 elements2.forEach((element) => myObserver2.observe(element));

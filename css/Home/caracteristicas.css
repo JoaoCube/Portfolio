@@ -17,14 +17,14 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 /* COMECA NA ESQUERDA */
-.hidden {
+.animated_left {
   filter: blur(15px);
   transition: all 1s;
   transform: translateX(-100%);
   opacity: 0;
 }
 /* VAI PRO LOCAL INICIAL */
-.show {
+.show_left {
   filter: blur(0px);
   transition: all 1s;
   transform: translateX(0);
@@ -32,13 +32,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* COMECA DE BAIXO */
-.hidden2 {
+.animated_top {
   transition: all 1s;
-  transform: translateY(50%);
+  transform: translateY(40%);
   opacity: 0;
 }
 /* VAI PRA CIMA */
-.show2 {
+.show_top {
   transition: all 1s;
   transform: translateY(0);
   opacity: 1;

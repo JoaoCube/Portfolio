@@ -10,7 +10,7 @@
   margin-right: auto;
   background-color: var(--cor-6);
   border: 4px solid var(--cor-3);
-  box-shadow: 4px 4px 0px var(--cor-3);
+  box-shadow: 8px 8px 0px var(--cor-3);
   padding: 20px 0px;
 }
 /* RETANGULO BRANCO OCM 2 ITENS */
@@ -74,6 +74,10 @@
 @media (max-width: 500px) {
   .contato-bg {
     padding: 150px 0px;
+  }
+  .contato-container {
+    margin: 10px;
+    box-shadow: 4px 4px 0px var(--cor-3);
   }
   .contato-conteudo .card-contato {
     margin: 20px;
