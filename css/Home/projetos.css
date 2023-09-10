@@ -36,7 +36,7 @@
   padding: 20px;
   border: 4px solid var(--cor-3);
   background-color: var(--cor-6);
-  max-width: 500px;
+  max-width: 440px;
   height: auto;
   flex-wrap: wrap;
 }
@@ -44,7 +44,7 @@
 .card-item .area-imagem {
   overflow: hidden;
   padding: 20px;
-  height: 400px;
+  height: 380px;
   margin-bottom: 20px;
   border: 4px solid var(--cor-3);
   background-color: var(--cor-10);

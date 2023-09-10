@@ -16,24 +16,25 @@
   justify-content: center;
   align-items: center;
 }
-
+/* CONTAINER DOS CARDS */
 .experiencia-conteudo .xp-cards {
   width: 600px;
   height: auto;
-  gap: 20px;
   margin: 10px;
-  border: 4px solid var(--cor-3);
 }
+
 .xp-cards :nth-child(2) {
   transition-delay: 400ms;
 }
 .xp-cards :nth-child(1) {
-  transition-delay: 700ms;
+  transition-delay: 600ms;
 }
 .experiencia-conteudo .xp-left,
 .xp-right {
   overflow: hidden;
   padding: 20px;
+  margin: 20px;
+  border: 4px solid var(--cor-3);
   width: auto;
   height: auto;
   background-color: var(--cor-10);
@@ -120,6 +121,13 @@
     gap: 0px;
     margin: 10px;
   }
+  .experiencia-conteudo .xp-left,
+  .xp-right {
+    overflow: hidden;
+    margin: 10px;
+    width: auto;
+    height: auto;
+  }
   .xp-left ul {
     width: auto;
     display: grid;
@@ -168,5 +176,12 @@
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .experiencia-conteudo .xp-left,
+  .xp-right {
+    overflow: hidden;
+    margin: 10px;
+    width: auto;
+    height: auto;
   }
 }

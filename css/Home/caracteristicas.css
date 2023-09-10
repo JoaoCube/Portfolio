@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
 /* COMECA DE BAIXO */
 .animated_top {
   transition: all 1s;
-  transform: translateY(40%);
+  transform: translateY(30%);
   opacity: 0;
 }
 /* VAI PRA CIMA */
