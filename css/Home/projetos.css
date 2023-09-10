@@ -1,8 +1,9 @@
 .projetos-bg {
   margin-left: auto;
   margin-right: auto;
-  height: 90vh;
+  height: auto;
   padding: 60px 0px;
+  background-color: var(--cor-10);
 }
 
 .projetos-container {

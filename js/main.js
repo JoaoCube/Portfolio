@@ -54,15 +54,15 @@ window.addEventListener("scroll", function () {
 
 // BAIXAR CURRICULO
 function downloadResume() {
-  const resumeUrl = "Assets/docs/CV_Joao_Santos.PDF";
+  const resumeUrl = "Assets/docs/CV_Joao_Santos.pdf";
 
   // elemento de link para o download
-  const link = document.createElement("a");
-  link.href = resumeUrl;
-  link.target = "_blank";
-  link.download = "Curriculo 2023 - Joao Santos.pdf"; // Nome do arquivo
+  const cv = document.createElement("a");
+  cv.href = resumeUrl;
+  cv.target = "_blank";
+  cv.download = "Curriculo 2023 - Joao Santos.pdf"; // Nome do arquivo
 
-  link.click();
+  cv.click();
 }
 const downloadButton = document.getElementById("downloadButton");
 downloadButton.addEventListener("click", downloadResume);
