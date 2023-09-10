@@ -35,12 +35,7 @@
   background: linear-gradient(to right, var(--cor-11), var(--cor-12));
   border-bottom: 4px solid var(--cor-3);
 }
-.barra .ball {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: var(--cor-4);
-}
+
 /* CONTAINER DE TUDO */
 .profile-conteudo {
   display: flex;
@@ -145,12 +140,6 @@
   .introducao-container .barra {
     height: 40px;
     gap: 10px;
-  }
-  .barra .ball {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: var(--cor-4);
   }
   .profile-conteudo {
     display: grid;

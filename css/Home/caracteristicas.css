@@ -18,14 +18,12 @@ body::-webkit-scrollbar-thumb {
 }
 /* COMECA NA ESQUERDA */
 .animated_left {
-  filter: blur(15px);
   transition: all 1s;
   transform: translateX(-100%);
   opacity: 0;
 }
 /* VAI PRO LOCAL INICIAL */
 .show_left {
-  filter: blur(0px);
   transition: all 1s;
   transform: translateX(0);
   opacity: 1;

@@ -82,7 +82,7 @@ function toggleMenu(event) {
   }
 }
 btnMobile.addEventListener("click", toggleMenu, { passive: true });
-btnMobile.addEventListener("touchstart", toggleMenu, { passive: true });
+btnMobile.addEventListener("touchstart", toggleMenu, { passive: false });
 
 // ANIMACAO DE ESCREVER NA INTRODUCAO
 function typeWriter(elemento) {
