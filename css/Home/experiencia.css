@@ -1,8 +1,8 @@
 .experiencia-bg {
   height: 89vh;
   padding: 60px 0px;
-  background-size: cover;
-  background-image: url(/Assets/imgs/bg-xp.webp);
+  background-size: 100%;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhztKHsUzqd61eyU4tFI4GbYUKVng5p6XZqFooq2aV5huFe1_fL1WUEMZpCPCOAuZ0ErOQUh81E_dd0UBOdkJg2sZWCzOLbQWnkvD_RaVtlINSJ1M4RD2aItlZhu-DtC--rZj7jIeWjIM-pF1P8dUf6Dq1Zh-y37sUjbpq6T8Sy6622vxmc_9XsJQUrDtQ/s16000/bg-xp.png");
 }
 
 .experiencia-container {

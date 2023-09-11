@@ -1,6 +1,6 @@
 .sobre-bg {
   background-size: cover;
-  background-image: url(/Assets/imgs/bg-about.webp);
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgna4ONmrJVN9kF-WaRkBQNQ_EXGCOBu_KTswLcb7N1mb_Tpb_cHDA1CezJJZlu7_OLE8uZ4DLzLiQVgNWq9iWbodtBNyZVt9mvBE0Lnh7C4w2FZaaxEfs_hABkTB_8X4I6agGDZKu2xQlpKna4skUk90elI5TKu5cVpepKiz2YjoHc7PSj-VEJXdhgucPe/s16000/bg-about.png");
   margin-left: auto;
   margin-right: auto;
   height: 90vh;
@@ -29,7 +29,7 @@
   box-shadow: 4px 4px 0px var(--cor-3);
   border: 4px solid var(--cor-3);
   background-size: cover;
-  background-image: url(/Assets/imgs/bg-profile2.webp);
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0-yjXn8Aln-xxHCILzsk1iDVgzpH6cTFCjXXzd-K5LIfwQaVkFXj3AICGFrzBmHZMy-0FAuQmn_AtCoJRzH81qLhbV8221_eD3ZKbKUOcIH2YQ0hhxXqUZe4nsVv38HOj-UGTSN45s4oNfPy5QT7CbqSAEsvVWD54ezmPE3czzh3OSrE87F2DVY_GNBqa/s16000/bg-profile2.png");
 }
 .imagem-area img {
   width: 100%;
