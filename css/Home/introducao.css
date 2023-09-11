@@ -131,6 +131,8 @@
   .introducao-bg {
     height: auto;
     overflow: hidden;
+    background-size: cover;
+    background-image: url(/Assets/imgs/bg-intro.webp);
   }
   .introducao-container {
     height: 600px;
@@ -173,6 +175,8 @@
   .introducao-bg {
     height: auto;
     overflow: hidden;
+    background-size: cover;
+    background-image: url(/Assets/imgs/bg-intro.webp);
   }
   .introducao-container {
     height: auto;
@@ -205,6 +209,8 @@
   .introducao-bg {
     height: auto;
     overflow: hidden;
+    background-size: cover;
+    background-image: url(/Assets/imgs/bg-intro.webp);
   }
   .introducao-container {
     height: auto;
