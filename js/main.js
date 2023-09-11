@@ -36,7 +36,7 @@ footer.innerHTML = `
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
 
-// VOLTAR AO TOPO
+// VOLTAR AO TOPO NO FOOTER
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -95,13 +95,13 @@ function typeWriter(elemento) {
 const titulo = document.querySelector("h1");
 typeWriter(titulo);
 
-// PUXA IMAGEM E TOOLTIP
+// TOOLTIP
 const imagem = document.getElementById("main-image");
 const tooltip = document.getElementById("tooltip");
 
 // MOUSE SEGUIR MOUSEMOVE OU OVER
 imagem.addEventListener("mousemove", (event) => {
-  tooltip.textContent = "Curto estilo retrô";
+  tooltip.textContent = "Curto estilo Van Gogh";
 
   // posição do tooltip
   tooltip.style.left = `${event.clientX}px`;

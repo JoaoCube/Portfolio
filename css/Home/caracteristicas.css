@@ -2,10 +2,10 @@ body::-webkit-scrollbar {
   width: 8px;
 }
 body::-webkit-scrollbar-track {
-  background: var(--cor-6);
+  background: var(--cor-11);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--cor-3);
+  background-color: var(--cor-12);
 }
 
 #tooltipSkill {

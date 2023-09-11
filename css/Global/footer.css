@@ -1,7 +1,8 @@
 .footer-bg {
   width: 100%;
   height: auto;
-  background-color: var(--cor-13);
+  background-size: cover;
+  background-image: url(/Assets/imgs/bg-footer.webp);
 }
 
 .footer-container {

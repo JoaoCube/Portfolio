@@ -3,7 +3,8 @@
   margin-right: auto;
   height: auto;
   padding: 60px 0px;
-  background-color: var(--cor-10);
+  background-size: cover;
+  background-image: url(/Assets/imgs/bg-about.webp);
 }
 
 .projetos-container {
