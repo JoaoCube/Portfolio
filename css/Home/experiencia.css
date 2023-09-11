@@ -53,9 +53,6 @@
   margin-bottom: 20px;
   border-bottom: 1px solid var(--cor-8);
 }
-.xp-left p {
-  color: var(--cor-5);
-}
 .xp-left ul {
   width: 100%;
   display: grid;
