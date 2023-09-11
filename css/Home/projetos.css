@@ -45,7 +45,7 @@
 .card-item .area-imagem {
   overflow: hidden;
   padding: 20px;
-  height: 380px;
+  height: 360px;
   margin-bottom: 20px;
   border: 4px solid var(--cor-3);
   background-color: var(--cor-10);
@@ -149,6 +149,6 @@
 }
 @media (max-width: 500px) {
   .card-item .area-imagem {
-    height: 260px;
+    height: 250px;
   }
 }
