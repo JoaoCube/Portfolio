@@ -12,7 +12,7 @@
   height: 90vh;
   width: 100%;
   background-size: cover;
-  background-image: url(/Assets/imgs/bg-intro.webp);
+  background-image: url("/Assets/imgs/bg-intro.webp");
   overflow: hidden;
 }
 
@@ -129,10 +129,9 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
+    width: 100%;
     height: auto;
     overflow: hidden;
-    background-size: cover;
-    background-image: url(/Assets/imgs/bg-intro.webp);
   }
   .introducao-container {
     height: 600px;
@@ -175,8 +174,6 @@
   .introducao-bg {
     height: auto;
     overflow: hidden;
-    background-size: cover;
-    background-image: url(/Assets/imgs/bg-intro.webp);
   }
   .introducao-container {
     height: auto;
@@ -209,8 +206,6 @@
   .introducao-bg {
     height: auto;
     overflow: hidden;
-    background-size: cover;
-    background-image: url(/Assets/imgs/bg-intro.webp);
   }
   .introducao-container {
     height: auto;
