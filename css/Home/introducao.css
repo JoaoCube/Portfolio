@@ -11,8 +11,8 @@
 .introducao-bg {
   height: 90vh;
   width: 100%;
-  background-size: cover;
-  background-image: url("/Assets/imgs/bg-intro.webp");
+  background-size: auto;
+  background: url("/Assets/imgs/bg-intro.webp") no-repeat;
   overflow: hidden;
 }
 
@@ -52,7 +52,7 @@
   box-shadow: 4px 4px 0px var(--cor-3);
   border: 4px solid var(--cor-3);
   background-size: cover;
-  background-image: url(/Assets/imgs/bg-profile1.webp);
+  background-image: url("/Assets/imgs/bg-profile1.png");
 }
 .quadro1 img {
   width: 100%;
