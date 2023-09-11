@@ -51,7 +51,8 @@
   overflow: hidden;
   box-shadow: 4px 4px 0px var(--cor-3);
   border: 4px solid var(--cor-3);
-  background-size: cover;
+  background-size: 100%;
+  background-color: var(--cor-10);
   background-image: url("/Assets/imgs/bg-profile1.png");
 }
 .quadro1 img {
