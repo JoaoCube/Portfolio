@@ -2,7 +2,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 40px;
-  background-color: var(--cor-10);
+  background-color: var(--cor-4);
 }
 .header-conteudo {
   margin: 0 auto;
@@ -23,14 +23,14 @@
   display: block;
   position: relative;
   font-size: 1.1rem;
-  border: 1px solid var(--cor-3);
+  border: 1px solid var(--cor-1);
   padding: 5px 10px;
-  box-shadow: 4px 4px 0px var(--cor-3);
+  box-shadow: 4px 4px 0px var(--cor-1);
   transition: 0.3s ease-in-out;
-  background-color: var(--cor-10);
+  background-color: var(--cor-4);
 }
 #menu a:hover {
-  box-shadow: 0px 0px 0px var(--cor-3);
+  box-shadow: 0px 0px 0px var(--cor-1);
 }
 
 #btn-mobile {
@@ -45,7 +45,7 @@
     height: 0px;
     top: 100px;
     right: 20px;
-    background-color: var(--cor-10);
+    background-color: var(--cor-4);
     transition: 0.5s;
     z-index: 100;
     visibility: hidden;

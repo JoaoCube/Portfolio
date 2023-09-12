@@ -9,7 +9,7 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 header.innerHTML = `
 <div class="header-conteudo">
-<a href="index.html" id="logo" class="cor-3 font2-bold-Pg">Cube<span class="cor-3 font1-normal-Pp">.dev</span></a>
+<a href="index.html" id="logo" class="cor-1 font2-bold-Pg">Cube<span class="cor-1 font1-normal-Pp">.dev</span></a>
 
 <nav id="nav">
   <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
@@ -28,10 +28,10 @@ header.innerHTML = `
 footer.innerHTML = `
 <div class="footer-container">
 <div class="btn-top" onclick="scrollToTop()" id="scrollTopBtn">
-<p class="cor-10 font1-normal-Pp">Voltar ao Topo</p>
+<p class="cor-4 font1-normal-Pp">Voltar ao Topo</p>
 </div>
 <div class="footer-conteudo">
-  <p class="cor-10">CubeElement © Todos os direitos reservados.</p>
+  <p class="cor-4">CubeElement © Todos os direitos reservados.</p>
 </div>
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
@@ -131,11 +131,11 @@ elements.forEach((element) => myObserver.observe(element));
 const myObserver2 = new IntersectionObserver((entries2) => {
   entries2.forEach((entry2) => {
     if (entry2.isIntersecting) {
-      entry2.target.classList.add("show_top");
+      entry2.target.classList.add("show_right");
     } else {
-      entry2.target.classList.remove("show_top");
+      entry2.target.classList.remove("show_right");
     }
   });
 });
-const elements2 = document.querySelectorAll(".animated_top");
+const elements2 = document.querySelectorAll(".animated_right");
 elements2.forEach((element) => myObserver2.observe(element));

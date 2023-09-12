@@ -1,10 +1,8 @@
 .projetos-bg {
-  margin-left: auto;
-  margin-right: auto;
   height: auto;
   padding: 60px 0px;
   background-size: cover;
-  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgna4ONmrJVN9kF-WaRkBQNQ_EXGCOBu_KTswLcb7N1mb_Tpb_cHDA1CezJJZlu7_OLE8uZ4DLzLiQVgNWq9iWbodtBNyZVt9mvBE0Lnh7C4w2FZaaxEfs_hABkTB_8X4I6agGDZKu2xQlpKna4skUk90elI5TKu5cVpepKiz2YjoHc7PSj-VEJXdhgucPe/s16000/bg-about.png");
+  background-image: url("/Assets/imgs/bg-projects.webp");
 }
 
 .projetos-container {
@@ -21,22 +19,22 @@
   max-width: 1600px;
   margin-top: 60px;
 }
-.projetos-cards {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   gap: 20px;
 }
-.projetos-cards :nth-child(2) {
-  transition-delay: 400ms;
+.cards :nth-child(2) {
+  transition-delay: 300ms;
 }
-.projetos-cards :nth-child(3) {
-  transition-delay: 700ms;
+.cards :nth-child(3) {
+  transition-delay: 600ms;
 }
-.projetos-cards .card-item {
+.cards .card-item {
   padding: 20px;
-  border: 4px solid var(--cor-3);
-  background-color: var(--cor-6);
+  border: 4px solid var(--cor-1);
+  background-color: var(--cor-0);
   max-width: 440px;
   height: auto;
   flex-wrap: wrap;
@@ -47,8 +45,8 @@
   padding: 20px;
   height: 360px;
   margin-bottom: 20px;
-  border: 4px solid var(--cor-3);
-  background-color: var(--cor-10);
+  border: 4px solid var(--cor-1);
+  background-color: var(--cor-4);
 }
 .area-imagem img {
   width: 100%;
@@ -58,8 +56,9 @@
 }
 .card-item .area-text {
   margin: 10px auto;
-  max-width: 350px;
+  max-width: 300px;
 }
+
 .card-item .area-button {
   width: auto;
   padding: 10px;
@@ -71,17 +70,18 @@
 .area-button button {
   cursor: pointer;
   min-width: 130px;
-  border: 4px solid var(--cor-3);
-  box-shadow: 4px 4px 0px var(--cor-3);
-  background-color: var(--cor-10);
+  border: 4px solid var(--cor-1);
+  box-shadow: 4px 4px 0px var(--cor-1);
+  background-color: var(--cor-4);
   padding: 10px 20px;
   transition: 0.3s ease-in-out;
 }
 .area-button button:hover {
-  box-shadow: 0px 0px 0px var(--cor-3);
+  box-shadow: 0px 0px 0px var(--cor-1);
 }
 .area-button .preview {
-  background-color: var(--cor-13);
+  background-color: var(--cor-8);
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1200px) {
@@ -94,7 +94,7 @@
     margin-top: 20px;
     width: 100%;
   }
-  .projetos-cards {
+  .cards {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@
     flex-wrap: wrap;
     gap: 40px;
   }
-  .projetos-cards .card-item {
+  .cards .card-item {
     margin: 0px 10px;
     max-width: 400px;
     height: auto;
@@ -123,12 +123,12 @@
   .projetos-bg {
     height: auto;
   }
-  .projetos-cards {
+  .cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-  .projetos-cards .card-item {
+  .cards .card-item {
     margin: 0px 10px;
     width: auto;
     height: auto;

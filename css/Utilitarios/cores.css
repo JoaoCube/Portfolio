@@ -1,21 +1,14 @@
-/*CONFIGURA CORES PARA CHAMAR COM A VARIAVEL*/
 :root {
-  --cor-hover: #2b2b2b;
-  --cor-0: #000000;
-  --cor-1: #0e0e12;
-  --cor-2: #0e0c0c;
-  --cor-3: #161616;
-  --cor-4: #1d1d24;
-  --cor-5: #555555;
-  --cor-6: #d8d8d8;
-  --cor-7: #f9f9fc;
-  --cor-8: #c9c9c9;
-  --cor-9: #c6c6da;
-  --cor-10: #ffffff;
-  --cor-11: #fffab2;
-  --cor-12: #ffba5a;
-  --cor-13: #220780;
-  --cor-14: #615fed;
+  --cor-0: #cfcfcf;
+  --cor-1: #161616;
+  --cor-2: #333333;
+  --cor-3: #555555;
+  --cor-4: #ffffff;
+  --cor-5: #fffab2;
+  --cor-6: #ffba5a;
+  --cor-7: #e5a84a;
+  --cor-8: #220780;
+  --cor-9: #615fed;
 }
 
 .cor-0 {
@@ -47,19 +40,4 @@
 }
 .cor-9 {
   color: var(--cor-9);
-}
-.cor-10 {
-  color: var(--cor-10);
-}
-.cor-11 {
-  color: var(--cor-11);
-}
-.cor-12 {
-  color: var(--cor-12);
-}
-.cor-13 {
-  color: var(--cor-13);
-}
-.cor-14 {
-  color: var(--cor-14);
 }
