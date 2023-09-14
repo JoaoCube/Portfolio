@@ -27,8 +27,8 @@ header.innerHTML = `
 `;
 footer.innerHTML = `
 <div class="footer-container">
-<div class="btn-top" onclick="scrollToTop()" id="scrollTopBtn">
-<p class="cor-4 font1-normal-Pp">Voltar ao Topo</p>
+<div class="btn-top" onclick="scrollToTop()" id="btn-topo">
+<p class="cor-4 font1-normal-Pp">Voltar ao Topo <img src="./Assets/icons/arrow-up.svg" alt="seta pra cima" width="20px" height="20px"></p>
 </div>
 <div class="footer-conteudo">
   <p class="cor-4">CubeElement © Todos os direitos reservados.</p>
@@ -44,8 +44,8 @@ function scrollToTop() {
   });
 }
 window.addEventListener("scroll", function () {
-  var scrollTopBtn = document.getElementById("scrollTopBtn");
-  if (window.scrollY > 200) {
+  let scrollTopBtn = document.getElementById("btn-topo");
+  if (window.scrollY > 700) {
     scrollTopBtn.style.display = "block";
   } else {
     scrollTopBtn.style.display = "none";
